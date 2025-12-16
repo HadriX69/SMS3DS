@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NintendoWareIntermediateFile>
+	<GraphicsContentCtr Namespace="" Version="1.3.0">
+		<EditData>
+			<MetaData>
+				<Key>MetaData</Key>
+				<Create Author="hadri" Date="2025-12-16T19:58:25" Source="C:/Users/hadri/Desktop/CODE ET PROJET/Projet Unity/3DS/SMS3DS/SMS3DS/Temp/StagingArea/Banner/Model/COMMON/Textures/COMMON1.tga">
+					<ToolDescriptions Name="NintendoWare NW4C_TextureConverter" Version="0.1.9" />
+				</Create>
+			</MetaData>
+			<ContentSummaryMetaData>
+				<Key>ContentSummaries</Key>
+				<Values>
+					<ContentSummary ContentTypeName="GraphicsContent">
+						<ObjectSummaries>
+							<ObjectSummary TypeName="ImageTexture" Name="">
+								<Notes>
+									<Note Name="EtcEncoding" Value="Fast Perceptual"/>
+								</Notes>
+							</ObjectSummary>
+						</ObjectSummaries>
+					</ContentSummary>
+				</Values>
+			</ContentSummaryMetaData>
+		</EditData>
+		<Textures>
+			<ImageTextureCtr Name="" Width="8" Height="8" MipmapSize="1" Path="C:/Users/hadri/Desktop/CODE ET PROJET/Projet Unity/3DS/SMS3DS/SMS3DS/Temp/StagingArea/Banner/Model/COMMON/Textures/COMMON1.tga" Encoding="Base64" Format="Rgba8">
+				<Images>
+					<PixelBasedImageCtr>/wj//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////w==</PixelBasedImageCtr>
+				</Images>
+			</ImageTextureCtr>
+		</Textures>
+	</GraphicsContentCtr>
+</NintendoWareIntermediateFile>
+

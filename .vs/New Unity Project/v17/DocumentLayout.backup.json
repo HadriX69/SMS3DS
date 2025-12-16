@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hadri\\Desktop\\CODE ET PROJET\\Projet Unity\\3DS\\SMS3DS\\New Unity Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|Assembly-CSharp.csproj|c:\\users\\hadri\\desktop\\code et projet\\projet unity\\3ds\\sms3ds\\new unity project\\assets\\scripts\\fps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FPS.cs",
+              "DocumentMoniker": "C:\\Users\\hadri\\Desktop\\CODE ET PROJET\\Projet Unity\\3DS\\SMS3DS\\New Unity Project\\Assets\\Scripts\\FPS.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FPS.cs",
+              "ToolTip": "C:\\Users\\hadri\\Desktop\\CODE ET PROJET\\Projet Unity\\3DS\\SMS3DS\\New Unity Project\\Assets\\Scripts\\FPS.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FPS.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowD8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T17:19:37.642Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
