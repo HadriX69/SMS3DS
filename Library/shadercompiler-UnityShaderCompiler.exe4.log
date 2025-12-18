@@ -1,5 +1,4 @@
 Base path: D:/Nitendo/Unity 3DS/Editor/Data
 Cmd: initializeCompiler
-Unhandled exception: Protocol error - failed to read correct magic number
-
-Quitting shader compiler process
+Cmd: compileSnippet
+  api=16 type=0 insize=1277 outsize=500 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_COLORSPACE_GAMMA ok=1

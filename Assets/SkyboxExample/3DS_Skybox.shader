@@ -1,71 +1,47 @@
 Shader "3DS_Skybox" {
-Properties {
-	_Tint ("Tint Color", Color) = (.5, .5, .5, .5)
-	[Gamma] _Exposure ("Exposure", Range(0, 8)) = 1.0
-	_Rotation ("Rotation", Range(0, 360)) = 0
-	[NoScaleOffset] _Tex ("Cubemap   (HDR)", Cube) = "grey" {}
-}
+    Properties {
+        _Tex ("Cubemap Texture", Cube) = "white" {}
+    }
+    SubShader {
+        Tags { "Queue"="Background" }
+        Cull Off
+        ZWrite Off
+        Fog { Mode Off }
+        Pass {
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            #pragma target 2.0
+            #include "UnityCG.cginc"
 
-SubShader {
-	Tags { "Queue"="Background" "RenderType"="Background" "PreviewType"="Skybox" }
-	Cull Off ZWrite Off
+            struct appdata_t {
+                float4 vertex : POSITION;
+                float3 texcoord : TEXCOORD0;
+            };
 
-	Pass {
-		
-		CGPROGRAM
-		#pragma vertex vert
-		#pragma fragment frag
-		#pragma target 2.0
+            struct v2f {
+                float4 pos : SV_POSITION;
+                float3 texcoord : TEXCOORD0;
+            };
 
-		#include "UnityCG.cginc"
+            samplerCUBE _Tex;
 
-		samplerCUBE _Tex;
-		half4 _Tex_HDR;
-		half4 _Tint;
-		half _Exposure;
-		float _Rotation;
+            v2f vert(appdata_t v) {
+                v2f o;
+                o.pos = UnityObjectToClipPos(v.vertex);
+                o.texcoord = v.texcoord;
+                return o;
+            }
 
-		float3 RotateAroundYInDegrees (float3 vertex, float degrees)
-		{
-			float alpha = degrees * UNITY_PI / 180.0;
-			float sina, cosa;
-			sincos(alpha, sina, cosa);
-			float2x2 m = float2x2(cosa, -sina, sina, cosa);
-			return float3(mul(m, vertex.xz), vertex.y).xzy;
-		}
-		
-		struct appdata_t {
-			float4 vertex : POSITION;
-		};
-
-		struct v2f {
-			float4 vertex : SV_POSITION;
-			float3 texcoord : TEXCOORD0;
-		};
-
-		v2f vert (appdata_t v)
-		{
-			v2f o;
-			float3 rotated = RotateAroundYInDegrees(v.vertex, _Rotation);
-			o.vertex = UnityObjectToClipPos(rotated);
-			o.texcoord = v.vertex.xyz;
-			o.vertex.z = 0.0;
-			return o;
-		}
-
-		fixed4 frag (v2f i) : SV_Target
-		{
-			half4 tex = texCUBE (_Tex, i.texcoord);
-			half3 c = DecodeHDR (tex, _Tex_HDR);
-			c = c * _Tint.rgb;
-			c *= _Exposure;
-			return half4(c, 1);
-		}
-		ENDCG 
-	}
-} 	
-
-
-Fallback "Skybox/Cubemap"
-
+            fixed4 frag(v2f i) : SV_Target {
+                // Use half precision
+                half3 texCoord = half3(i.texcoord);
+                // Using normalize function
+                half4 color = texCUBE(_Tex, normalize(texCoord));
+                return color;
+            }
+            ENDCG
+        }
+    }
+    FallBack "Diffuse"
 }

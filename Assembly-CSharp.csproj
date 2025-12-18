@@ -53,6 +53,7 @@
      <Compile Include="Assets\SkyboxExample\Tumble.cs" />
      <Compile Include="Assets\TerrainExample\Rotate.cs" />
      <None Include="Assets\SkyboxExample\3DS_Skybox.shader" />
+     <None Include="Assets\SkyboxExample\CustomNewOptimizedSkybox.shader" />
      <None Include="Assets\TerrainExample\TerrainN3DS.shader" />
      <None Include="Assets\TerrainExample\ReadMe.txt" />
  <Reference Include="UnityEngine.UI">
