@@ -1,0 +1,2 @@
+C:\Users\hadri\Desktop\CODE ET PROJET\Projet Unity\3DS\SMS3DS\SMS3DS\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+C:\Users\hadri\Desktop\CODE ET PROJET\Projet Unity\3DS\SMS3DS\SMS3DS\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

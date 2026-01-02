@@ -49,6 +49,11 @@
      <Compile Include="Assets\GamepadExample\GamepadScript.cs" />
      <Compile Include="Assets\KeyboardExample\KeyboardScript.cs" />
      <Compile Include="Assets\Scripts\FPS.cs" />
+     <Compile Include="Assets\Scripts\Hand_System.cs" />
+     <Compile Include="Assets\Scripts\Money_System.cs" />
+     <Compile Include="Assets\Scripts\Settings_Button.cs" />
+     <Compile Include="Assets\Scripts\ShopBuy_Button.cs" />
+     <Compile Include="Assets\Scripts\Shop_Button.cs" />
      <Compile Include="Assets\SkyboxExample\Tilt.cs" />
      <Compile Include="Assets\SkyboxExample\Tumble.cs" />
      <Compile Include="Assets\TerrainExample\Rotate.cs" />

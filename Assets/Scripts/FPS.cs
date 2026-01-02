@@ -61,22 +61,22 @@ public class FPS : MonoBehaviour {
         float mouseY = 0f;
 
         // Look input
-        if (GamePad.GetButtonHold(N3dsButton.Right)) 
+        if (GamePad.GetButtonHold(N3dsButton.Emulation_R_Right) || GamePad.GetButtonHold(N3dsButton.R)) 
 		{
             mouseX = 1f * sensitivity;
         }
 
-		if (GamePad.GetButtonHold(N3dsButton.Left)) 
+		if (GamePad.GetButtonHold(N3dsButton.Emulation_R_Left) || GamePad.GetButtonHold(N3dsButton.L))
 		{
             mouseX = -1f * sensitivity;
         }
 
-		if (GamePad.GetButtonHold(N3dsButton.Up)) 
+		if (GamePad.GetButtonHold(N3dsButton.Emulation_R_Up) || GamePad.GetButtonHold(N3dsButton.ZR))
 		{
 			mouseY = 1f * sensitivity;
         }
 
-		if (GamePad.GetButtonHold(N3dsButton.Down)) 
+		if (GamePad.GetButtonHold(N3dsButton.Emulation_R_Down) || GamePad.GetButtonHold(N3dsButton.ZL))
 		{
             mouseY = -1f * sensitivity;
         }

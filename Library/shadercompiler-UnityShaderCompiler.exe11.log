@@ -1,4 +1,2 @@
 Base path: D:/Nitendo/Unity 3DS/Editor/Data
 Cmd: initializeCompiler
-Cmd: compileSnippet
-  api=16 type=1 insize=1277 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_COLORSPACE_GAMMA ok=1
