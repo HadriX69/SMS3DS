@@ -1,6 +1,6 @@
 <h3>✅ = Achieved 🔁 = Half-finished/In progress ❌ = Not started</h3>
 <h2>➡️ 🎊 50% Completed 🎊</h2>
-<h1> Things I need to do for acheved the alpha v1.4 : </h1>
+<h1> Things I need to do for acheved the alpha v1.3 : </h1>
 <ul>
 <li>✅ - Fixed the money system bug. Still having bugs - edit: bug fixed.</li>
 <li>🔁 - Help the player know where to press to, for example, place an item. Half-finished. Icons created but not implemented in the game.</li>
