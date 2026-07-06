@@ -1,6 +1,8 @@
+<h1>🚨 This project is cancelled because Unity 3DS (5.6.6f2) is not optimized for the 3DS and is very buggy 🚨</h1>
+
 <h3>✅ = Achieved 🔁 = Half-finished/In progress ❌ = Not started</h3>
 <h2>➡️ 🎊 50% Completed 🎊</h2>
-<h1> Things I need to do for acheved the alpha v1.3 : </h1>
+<h1> Things I need to do for acheved the alpha v1.4 : </h1>
 <ul>
 <li>✅ - Fixed the money system bug. Still having bugs - edit: bug fixed.</li>
 <li>🔁 - Help the player know where to press to, for example, place an item. Half-finished. Icons created but not implemented in the game.</li>
