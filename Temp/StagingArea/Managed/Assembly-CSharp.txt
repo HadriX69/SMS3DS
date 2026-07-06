@@ -1,0 +1,2187 @@
+
+//  Microsoft (R) .NET Framework IL Disassembler.  Version 3.5.30729.1
+//  Copyright (c) Microsoft Corporation.  All rights reserved.
+
+
+
+// Metadata version: v2.0.50727
+.assembly extern UnityEngine
+{
+  .ver 0:0:0:0
+}
+.assembly extern UnityEngine.UI
+{
+  .ver 1:0:0:0
+}
+.assembly extern mscorlib
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+.assembly 'Assembly-CSharp'
+{
+
+  // --- The following custom attribute is added automatically, do not uncomment -------
+  //  .custom instance void [mscorlib]System.Diagnostics.DebuggableAttribute::.ctor(valuetype [mscorlib]System.Diagnostics.DebuggableAttribute/DebuggingModes) = ( 01 00 02 00 00 00 00 00 ) 
+
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() = ( 01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+                                                                                                             63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01 )       // ceptionThrows.
+  .permissionset reqmin
+             = {class 'System.Security.Permissions.SecurityPermissionAttribute, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' = {property bool 'SkipVerification' = bool(true)}}
+  .hash algorithm 0x00008004
+  .ver 0:0:0:0
+}
+.module 'Assembly-CSharp.dll'
+// MVID: {03C2B751-8579-45A3-9731-30C371E637DD}
+.custom instance void [mscorlib]System.Security.UnverifiableCodeAttribute::.ctor() = ( 01 00 00 00 ) 
+.imagebase 0x00400000
+.file alignment 0x00000200
+.stackreserve 0x00100000
+.subsystem 0x0003       // WINDOWS_CUI
+.corflags 0x00000001    //  ILONLY
+// Image base: 0x010B0000
+
+
+// =============== CLASS MEMBERS DECLARATION ===================
+
+.class public auto ansi beforefieldinit GamepadScript
+       extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .field private int32 width
+  .field private static literal int32 height = int32(0x00000014)
+  .field private static literal int32 spacing = int32(0x00000005)
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor()
+    IL_0006:  ret
+  } // end of method GamepadScript::.ctor
+
+  .method private hidebysig instance void 
+          Start() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldc.i4.1
+    IL_0001:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetType(valuetype [UnityEngine]N3dsKeyboardType)
+    IL_0006:  ret
+  } // end of method GamepadScript::Start
+
+  .method private hidebysig instance void 
+          OnGUI() cil managed
+  {
+    // Code size       327 (0x147)
+    .maxstack  4
+    .locals init (int32 V_0,
+             int32 V_1)
+    IL_0000:  ldc.i4.5
+    IL_0001:  stloc.0
+    IL_0002:  ldc.i4.5
+    IL_0003:  stloc.1
+    IL_0004:  ldarg.0
+    IL_0005:  ldc.i4.s   100
+    IL_0007:  stfld      int32 GamepadScript::width
+    IL_000c:  ldarg.0
+    IL_000d:  ldloca.s   V_0
+    IL_000f:  ldloca.s   V_1
+    IL_0011:  ldc.i4.1
+    IL_0012:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_0017:  ldarg.0
+    IL_0018:  ldloca.s   V_0
+    IL_001a:  ldloca.s   V_1
+    IL_001c:  ldc.i4.2
+    IL_001d:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_0022:  ldarg.0
+    IL_0023:  ldloca.s   V_0
+    IL_0025:  ldloca.s   V_1
+    IL_0027:  ldc.i4     0x400
+    IL_002c:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_0031:  ldarg.0
+    IL_0032:  ldloca.s   V_0
+    IL_0034:  ldloca.s   V_1
+    IL_0036:  ldc.i4     0x800
+    IL_003b:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_0040:  ldarg.0
+    IL_0041:  ldloca.s   V_0
+    IL_0043:  ldloca.s   V_1
+    IL_0045:  ldc.i4     0x200
+    IL_004a:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_004f:  ldarg.0
+    IL_0050:  ldloca.s   V_0
+    IL_0052:  ldloca.s   V_1
+    IL_0054:  ldc.i4     0x100
+    IL_0059:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_005e:  ldarg.0
+    IL_005f:  ldloca.s   V_0
+    IL_0061:  ldloca.s   V_1
+    IL_0063:  ldc.i4     0x4000
+    IL_0068:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_006d:  ldc.i4.s   80
+    IL_006f:  stloc.0
+    IL_0070:  ldc.i4.5
+    IL_0071:  stloc.1
+    IL_0072:  ldarg.0
+    IL_0073:  ldloca.s   V_0
+    IL_0075:  ldloca.s   V_1
+    IL_0077:  ldc.i4     0x8000
+    IL_007c:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_0081:  ldarg.0
+    IL_0082:  ldloca.s   V_0
+    IL_0084:  ldloca.s   V_1
+    IL_0086:  ldc.i4.s   64
+    IL_0088:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_008d:  ldarg.0
+    IL_008e:  ldloca.s   V_0
+    IL_0090:  ldloca.s   V_1
+    IL_0092:  ldc.i4     0x80
+    IL_0097:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_009c:  ldarg.0
+    IL_009d:  ldloca.s   V_0
+    IL_009f:  ldloca.s   V_1
+    IL_00a1:  ldc.i4.s   32
+    IL_00a3:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_00a8:  ldarg.0
+    IL_00a9:  ldloca.s   V_0
+    IL_00ab:  ldloca.s   V_1
+    IL_00ad:  ldc.i4.s   16
+    IL_00af:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_00b4:  ldarg.0
+    IL_00b5:  ldloca.s   V_0
+    IL_00b7:  ldloca.s   V_1
+    IL_00b9:  ldc.i4.8
+    IL_00ba:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_00bf:  ldc.i4     0xa0
+    IL_00c4:  stloc.0
+    IL_00c5:  ldarg.0
+    IL_00c6:  ldc.i4     0x8c
+    IL_00cb:  stfld      int32 GamepadScript::width
+    IL_00d0:  ldc.i4.5
+    IL_00d1:  stloc.1
+    IL_00d2:  ldarg.0
+    IL_00d3:  ldloca.s   V_0
+    IL_00d5:  ldloca.s   V_1
+    IL_00d7:  ldc.i4     0x40000000
+    IL_00dc:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_00e1:  ldarg.0
+    IL_00e2:  ldloca.s   V_0
+    IL_00e4:  ldloca.s   V_1
+    IL_00e6:  ldc.i4.4
+    IL_00e7:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_00ec:  ldarg.0
+    IL_00ed:  ldloca.s   V_0
+    IL_00ef:  ldloca.s   V_1
+    IL_00f1:  ldc.i4     0x20000000
+    IL_00f6:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_00fb:  ldarg.0
+    IL_00fc:  ldloca.s   V_0
+    IL_00fe:  ldloca.s   V_1
+    IL_0100:  ldc.i4     0x10000000
+    IL_0105:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_010a:  ldarg.0
+    IL_010b:  ldloca.s   V_0
+    IL_010d:  ldloca.s   V_1
+    IL_010f:  ldc.i4     0x1000000
+    IL_0114:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_0119:  ldarg.0
+    IL_011a:  ldloca.s   V_0
+    IL_011c:  ldloca.s   V_1
+    IL_011e:  ldc.i4     0x2000000
+    IL_0123:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_0128:  ldarg.0
+    IL_0129:  ldloca.s   V_0
+    IL_012b:  ldloca.s   V_1
+    IL_012d:  ldc.i4     0x4000000
+    IL_0132:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_0137:  ldarg.0
+    IL_0138:  ldloca.s   V_0
+    IL_013a:  ldloca.s   V_1
+    IL_013c:  ldc.i4     0x8000000
+    IL_0141:  call       instance void GamepadScript::Label(int32&,
+                                                            int32&,
+                                                            valuetype [UnityEngine]N3dsButton)
+    IL_0146:  ret
+  } // end of method GamepadScript::OnGUI
+
+  .method private hidebysig instance void 
+          Label(int32& xpos,
+                int32& ypos,
+                valuetype [UnityEngine]N3dsButton button) cil managed
+  {
+    // Code size       74 (0x4a)
+    .maxstack  4
+    .locals init (string V_0)
+    IL_0000:  ldarga.s   button
+    IL_0002:  constrained. [UnityEngine]N3dsButton
+    IL_0008:  callvirt   instance string [mscorlib]System.Object::ToString()
+    IL_000d:  stloc.0
+    IL_000e:  ldarg.3
+    IL_000f:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_0014:  brfalse    IL_0025
+
+    IL_0019:  ldloc.0
+    IL_001a:  ldstr      " *"
+    IL_001f:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_0024:  stloc.0
+    IL_0025:  ldarg.1
+    IL_0026:  ldind.i4
+    IL_0027:  conv.r4
+    IL_0028:  ldarg.2
+    IL_0029:  ldind.i4
+    IL_002a:  conv.r4
+    IL_002b:  ldarg.0
+    IL_002c:  ldfld      int32 GamepadScript::width
+    IL_0031:  conv.r4
+    IL_0032:  ldc.r4     20.
+    IL_0037:  newobj     instance void [UnityEngine]UnityEngine.Rect::.ctor(float32,
+                                                                            float32,
+                                                                            float32,
+                                                                            float32)
+    IL_003c:  ldloc.0
+    IL_003d:  call       void [UnityEngine]UnityEngine.GUI::Label(valuetype [UnityEngine]UnityEngine.Rect,
+                                                                  string)
+    IL_0042:  ldarg.2
+    IL_0043:  ldarg.2
+    IL_0044:  ldind.i4
+    IL_0045:  ldc.i4.s   25
+    IL_0047:  add
+    IL_0048:  stind.i4
+    IL_0049:  ret
+  } // end of method GamepadScript::Label
+
+} // end of class GamepadScript
+
+.class public auto ansi beforefieldinit KeyboardScript
+       extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .field private initonly string[] displayLanguages
+  .field private int32 displayLanguage
+  .field private initonly string[] finishableConditions
+  .field private int32 finishableCondition
+  .field private initonly string[] maskModes
+  .field private int32 maskMode
+  .field private initonly string[] parentalControls
+  .field private int32 parentalControl
+  .field private initonly string[] keyboardTypes
+  .field private int32 keyboardType
+  .field private int32 numBottomButtons
+  .field private bool fixedWidth
+  .field private bool homeButton
+  .field private bool lineFeedEnabled
+  .field private bool powerButton
+  .field private bool predictionEnabled
+  .field private bool softwareReset
+  .field private bool topScreenDims
+  .field private int32 width
+  .field private static literal int32 height = int32(0x00000019)
+  .field private static literal int32 spacingV = int32(0x00000002)
+  .field private string inputString
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       320 (0x140)
+    .maxstack  5
+    IL_0000:  ldarg.0
+    IL_0001:  ldc.i4.s   12
+    IL_0003:  newarr     [mscorlib]System.String
+    IL_0008:  dup
+    IL_0009:  ldc.i4.0
+    IL_000a:  ldstr      "Default"
+    IL_000f:  stelem.ref
+    IL_0010:  dup
+    IL_0011:  ldc.i4.1
+    IL_0012:  ldstr      "Japanese"
+    IL_0017:  stelem.ref
+    IL_0018:  dup
+    IL_0019:  ldc.i4.2
+    IL_001a:  ldstr      "English"
+    IL_001f:  stelem.ref
+    IL_0020:  dup
+    IL_0021:  ldc.i4.3
+    IL_0022:  ldstr      "French"
+    IL_0027:  stelem.ref
+    IL_0028:  dup
+    IL_0029:  ldc.i4.4
+    IL_002a:  ldstr      "German"
+    IL_002f:  stelem.ref
+    IL_0030:  dup
+    IL_0031:  ldc.i4.5
+    IL_0032:  ldstr      "Italian"
+    IL_0037:  stelem.ref
+    IL_0038:  dup
+    IL_0039:  ldc.i4.6
+    IL_003a:  ldstr      "Spanish"
+    IL_003f:  stelem.ref
+    IL_0040:  dup
+    IL_0041:  ldc.i4.7
+    IL_0042:  ldstr      "Chinese"
+    IL_0047:  stelem.ref
+    IL_0048:  dup
+    IL_0049:  ldc.i4.8
+    IL_004a:  ldstr      "Korean"
+    IL_004f:  stelem.ref
+    IL_0050:  dup
+    IL_0051:  ldc.i4.s   9
+    IL_0053:  ldstr      "Dutch"
+    IL_0058:  stelem.ref
+    IL_0059:  dup
+    IL_005a:  ldc.i4.s   10
+    IL_005c:  ldstr      "Portuguese"
+    IL_0061:  stelem.ref
+    IL_0062:  dup
+    IL_0063:  ldc.i4.s   11
+    IL_0065:  ldstr      "Russian"
+    IL_006a:  stelem.ref
+    IL_006b:  stfld      string[] KeyboardScript::displayLanguages
+    IL_0070:  ldarg.0
+    IL_0071:  ldc.i4.4
+    IL_0072:  newarr     [mscorlib]System.String
+    IL_0077:  dup
+    IL_0078:  ldc.i4.0
+    IL_0079:  ldstr      "None"
+    IL_007e:  stelem.ref
+    IL_007f:  dup
+    IL_0080:  ldc.i4.1
+    IL_0081:  ldstr      "Any"
+    IL_0086:  stelem.ref
+    IL_0087:  dup
+    IL_0088:  ldc.i4.2
+    IL_0089:  ldstr      "Non Space"
+    IL_008e:  stelem.ref
+    IL_008f:  dup
+    IL_0090:  ldc.i4.3
+    IL_0091:  ldstr      "Except Space"
+    IL_0096:  stelem.ref
+    IL_0097:  stfld      string[] KeyboardScript::finishableConditions
+    IL_009c:  ldarg.0
+    IL_009d:  ldc.i4.3
+    IL_009e:  newarr     [mscorlib]System.String
+    IL_00a3:  dup
+    IL_00a4:  ldc.i4.0
+    IL_00a5:  ldstr      "Disable"
+    IL_00aa:  stelem.ref
+    IL_00ab:  dup
+    IL_00ac:  ldc.i4.1
+    IL_00ad:  ldstr      "Immediate"
+    IL_00b2:  stelem.ref
+    IL_00b3:  dup
+    IL_00b4:  ldc.i4.2
+    IL_00b5:  ldstr      "WaitOneSecond"
+    IL_00ba:  stelem.ref
+    IL_00bb:  stfld      string[] KeyboardScript::maskModes
+    IL_00c0:  ldarg.0
+    IL_00c1:  ldc.i4.3
+    IL_00c2:  newarr     [mscorlib]System.String
+    IL_00c7:  dup
+    IL_00c8:  ldc.i4.0
+    IL_00c9:  ldstr      "Disable"
+    IL_00ce:  stelem.ref
+    IL_00cf:  dup
+    IL_00d0:  ldc.i4.1
+    IL_00d1:  ldstr      "Enable"
+    IL_00d6:  stelem.ref
+    IL_00d7:  dup
+    IL_00d8:  ldc.i4.2
+    IL_00d9:  ldstr      "System"
+    IL_00de:  stelem.ref
+    IL_00df:  stfld      string[] KeyboardScript::parentalControls
+    IL_00e4:  ldarg.0
+    IL_00e5:  ldc.i4.6
+    IL_00e6:  newarr     [mscorlib]System.String
+    IL_00eb:  dup
+    IL_00ec:  ldc.i4.0
+    IL_00ed:  ldstr      "Full"
+    IL_00f2:  stelem.ref
+    IL_00f3:  dup
+    IL_00f4:  ldc.i4.1
+    IL_00f5:  ldstr      "Qwerty"
+    IL_00fa:  stelem.ref
+    IL_00fb:  dup
+    IL_00fc:  ldc.i4.2
+    IL_00fd:  ldstr      "TenKey"
+    IL_0102:  stelem.ref
+    IL_0103:  dup
+    IL_0104:  ldc.i4.3
+    IL_0105:  ldstr      "NoJapanese"
+    IL_010a:  stelem.ref
+    IL_010b:  dup
+    IL_010c:  ldc.i4.4
+    IL_010d:  ldstr      "NNID"
+    IL_0112:  stelem.ref
+    IL_0113:  dup
+    IL_0114:  ldc.i4.5
+    IL_0115:  ldstr      "AccountPassword"
+    IL_011a:  stelem.ref
+    IL_011b:  stfld      string[] KeyboardScript::keyboardTypes
+    IL_0120:  ldarg.0
+    IL_0121:  ldc.i4.1
+    IL_0122:  stfld      int32 KeyboardScript::keyboardType
+    IL_0127:  ldarg.0
+    IL_0128:  ldc.i4.2
+    IL_0129:  stfld      int32 KeyboardScript::numBottomButtons
+    IL_012e:  ldarg.0
+    IL_012f:  ldstr      "Hello"
+    IL_0134:  stfld      string KeyboardScript::inputString
+    IL_0139:  ldarg.0
+    IL_013a:  call       instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor()
+    IL_013f:  ret
+  } // end of method KeyboardScript::.ctor
+
+  .method private hidebysig instance void 
+          Start() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldc.i4.1
+    IL_0001:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetType(valuetype [UnityEngine]N3dsKeyboardType)
+    IL_0006:  ret
+  } // end of method KeyboardScript::Start
+
+  .method private hidebysig instance void 
+          OnGUI() cil managed
+  {
+    // Code size       676 (0x2a4)
+    .maxstack  7
+    .locals init (int32 V_0,
+             int32 V_1,
+             valuetype [UnityEngine]N3dsKeyboardResult V_2)
+    IL_0000:  ldc.i4.0
+    IL_0001:  stloc.0
+    IL_0002:  ldc.i4.5
+    IL_0003:  stloc.1
+    IL_0004:  ldarg.0
+    IL_0005:  ldc.i4     0xb4
+    IL_000a:  stfld      int32 KeyboardScript::width
+    IL_000f:  ldarg.0
+    IL_0010:  ldloc.0
+    IL_0011:  ldloca.s   V_1
+    IL_0013:  ldstr      "Display Language: "
+    IL_0018:  ldarg.0
+    IL_0019:  ldflda     int32 KeyboardScript::displayLanguage
+    IL_001e:  ldarg.0
+    IL_001f:  ldfld      string[] KeyboardScript::displayLanguages
+    IL_0024:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     int32&,
+                                                                     string[])
+    IL_0029:  brfalse    IL_0039
+
+    IL_002e:  ldarg.0
+    IL_002f:  ldfld      int32 KeyboardScript::displayLanguage
+    IL_0034:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetDisplayLanguage(valuetype [UnityEngine]N3dsKeyboardDisplayLanguage)
+    IL_0039:  ldarg.0
+    IL_003a:  ldloc.0
+    IL_003b:  ldloca.s   V_1
+    IL_003d:  ldstr      "Finish Condition: "
+    IL_0042:  ldarg.0
+    IL_0043:  ldflda     int32 KeyboardScript::finishableCondition
+    IL_0048:  ldarg.0
+    IL_0049:  ldfld      string[] KeyboardScript::finishableConditions
+    IL_004e:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     int32&,
+                                                                     string[])
+    IL_0053:  brfalse    IL_0063
+
+    IL_0058:  ldarg.0
+    IL_0059:  ldfld      int32 KeyboardScript::finishableCondition
+    IL_005e:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetFinishableCondition(valuetype [UnityEngine]N3dsKeyboardFinishableCondition)
+    IL_0063:  ldarg.0
+    IL_0064:  ldloc.0
+    IL_0065:  ldloca.s   V_1
+    IL_0067:  ldstr      "Mask Mode: "
+    IL_006c:  ldarg.0
+    IL_006d:  ldflda     int32 KeyboardScript::maskMode
+    IL_0072:  ldarg.0
+    IL_0073:  ldfld      string[] KeyboardScript::maskModes
+    IL_0078:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     int32&,
+                                                                     string[])
+    IL_007d:  brfalse    IL_008d
+
+    IL_0082:  ldarg.0
+    IL_0083:  ldfld      int32 KeyboardScript::maskMode
+    IL_0088:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetMaskMode(valuetype [UnityEngine]N3dsKeyboardMaskMode)
+    IL_008d:  ldarg.0
+    IL_008e:  ldloc.0
+    IL_008f:  ldloca.s   V_1
+    IL_0091:  ldstr      "Parental Controls: "
+    IL_0096:  ldarg.0
+    IL_0097:  ldflda     int32 KeyboardScript::parentalControl
+    IL_009c:  ldarg.0
+    IL_009d:  ldfld      string[] KeyboardScript::parentalControls
+    IL_00a2:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     int32&,
+                                                                     string[])
+    IL_00a7:  brfalse    IL_00b7
+
+    IL_00ac:  ldarg.0
+    IL_00ad:  ldfld      int32 KeyboardScript::parentalControl
+    IL_00b2:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetParentalControls(valuetype [UnityEngine]N3dsKeyboardParentalControls)
+    IL_00b7:  ldarg.0
+    IL_00b8:  ldloc.0
+    IL_00b9:  ldloca.s   V_1
+    IL_00bb:  ldstr      "Type: "
+    IL_00c0:  ldarg.0
+    IL_00c1:  ldflda     int32 KeyboardScript::keyboardType
+    IL_00c6:  ldarg.0
+    IL_00c7:  ldfld      string[] KeyboardScript::keyboardTypes
+    IL_00cc:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     int32&,
+                                                                     string[])
+    IL_00d1:  brfalse    IL_00e1
+
+    IL_00d6:  ldarg.0
+    IL_00d7:  ldfld      int32 KeyboardScript::keyboardType
+    IL_00dc:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetType(valuetype [UnityEngine]N3dsKeyboardType)
+    IL_00e1:  ldarg.0
+    IL_00e2:  ldloc.0
+    IL_00e3:  ldloca.s   V_1
+    IL_00e5:  ldstr      "Num Buttons: "
+    IL_00ea:  ldarg.0
+    IL_00eb:  ldflda     int32 KeyboardScript::numBottomButtons
+    IL_00f0:  ldc.i4.1
+    IL_00f1:  ldc.i4.3
+    IL_00f2:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     int32&,
+                                                                     int32,
+                                                                     int32)
+    IL_00f7:  brfalse    IL_0107
+
+    IL_00fc:  ldarg.0
+    IL_00fd:  ldfld      int32 KeyboardScript::numBottomButtons
+    IL_0102:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetNumBottomButtons(int32)
+    IL_0107:  ldc.i4     0xb9
+    IL_010c:  stloc.0
+    IL_010d:  ldc.i4.5
+    IL_010e:  stloc.1
+    IL_010f:  ldarg.0
+    IL_0110:  ldc.i4     0x87
+    IL_0115:  stfld      int32 KeyboardScript::width
+    IL_011a:  ldarg.0
+    IL_011b:  ldloc.0
+    IL_011c:  ldloca.s   V_1
+    IL_011e:  ldstr      "Fixed Width: "
+    IL_0123:  ldarg.0
+    IL_0124:  ldflda     bool KeyboardScript::fixedWidth
+    IL_0129:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     bool&)
+    IL_012e:  brfalse    IL_013e
+
+    IL_0133:  ldarg.0
+    IL_0134:  ldfld      bool KeyboardScript::fixedWidth
+    IL_0139:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetFixedWidthMode(bool)
+    IL_013e:  ldarg.0
+    IL_013f:  ldloc.0
+    IL_0140:  ldloca.s   V_1
+    IL_0142:  ldstr      "Home Button: "
+    IL_0147:  ldarg.0
+    IL_0148:  ldflda     bool KeyboardScript::homeButton
+    IL_014d:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     bool&)
+    IL_0152:  brfalse    IL_0162
+
+    IL_0157:  ldarg.0
+    IL_0158:  ldfld      bool KeyboardScript::homeButton
+    IL_015d:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetHomeButtonEnabled(bool)
+    IL_0162:  ldarg.0
+    IL_0163:  ldloc.0
+    IL_0164:  ldloca.s   V_1
+    IL_0166:  ldstr      "Line Feed: "
+    IL_016b:  ldarg.0
+    IL_016c:  ldflda     bool KeyboardScript::lineFeedEnabled
+    IL_0171:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     bool&)
+    IL_0176:  brfalse    IL_0186
+
+    IL_017b:  ldarg.0
+    IL_017c:  ldfld      bool KeyboardScript::lineFeedEnabled
+    IL_0181:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetLineFeedEnabled(bool)
+    IL_0186:  ldarg.0
+    IL_0187:  ldloc.0
+    IL_0188:  ldloca.s   V_1
+    IL_018a:  ldstr      "Power Button: "
+    IL_018f:  ldarg.0
+    IL_0190:  ldflda     bool KeyboardScript::powerButton
+    IL_0195:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     bool&)
+    IL_019a:  brfalse    IL_01aa
+
+    IL_019f:  ldarg.0
+    IL_01a0:  ldfld      bool KeyboardScript::powerButton
+    IL_01a5:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetPowerButtonEnabled(bool)
+    IL_01aa:  ldarg.0
+    IL_01ab:  ldloc.0
+    IL_01ac:  ldloca.s   V_1
+    IL_01ae:  ldstr      "Prediction: "
+    IL_01b3:  ldarg.0
+    IL_01b4:  ldflda     bool KeyboardScript::predictionEnabled
+    IL_01b9:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     bool&)
+    IL_01be:  brfalse    IL_01ce
+
+    IL_01c3:  ldarg.0
+    IL_01c4:  ldfld      bool KeyboardScript::predictionEnabled
+    IL_01c9:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetPredictionEnabled(bool)
+    IL_01ce:  ldarg.0
+    IL_01cf:  ldloc.0
+    IL_01d0:  ldloca.s   V_1
+    IL_01d2:  ldstr      "Software Reset: "
+    IL_01d7:  ldarg.0
+    IL_01d8:  ldflda     bool KeyboardScript::softwareReset
+    IL_01dd:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     bool&)
+    IL_01e2:  brfalse    IL_01f2
+
+    IL_01e7:  ldarg.0
+    IL_01e8:  ldfld      bool KeyboardScript::softwareReset
+    IL_01ed:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetSoftwareResetEnabled(bool)
+    IL_01f2:  ldarg.0
+    IL_01f3:  ldloc.0
+    IL_01f4:  ldloca.s   V_1
+    IL_01f6:  ldstr      "Top Screen Dims: "
+    IL_01fb:  ldarg.0
+    IL_01fc:  ldflda     bool KeyboardScript::topScreenDims
+    IL_0201:  call       instance bool KeyboardScript::ButtonPressed(int32,
+                                                                     int32&,
+                                                                     string,
+                                                                     bool&)
+    IL_0206:  brfalse    IL_0216
+
+    IL_020b:  ldarg.0
+    IL_020c:  ldfld      bool KeyboardScript::topScreenDims
+    IL_0211:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::SetTopScreenDims(bool)
+    IL_0216:  ldc.r4     100.
+    IL_021b:  ldc.r4     208.
+    IL_0220:  ldc.r4     120.
+    IL_0225:  ldc.r4     30.
+    IL_022a:  newobj     instance void [UnityEngine]UnityEngine.Rect::.ctor(float32,
+                                                                            float32,
+                                                                            float32,
+                                                                            float32)
+    IL_022f:  ldstr      "Show Keyboard"
+    IL_0234:  call       bool [UnityEngine]UnityEngine.GUI::Button(valuetype [UnityEngine]UnityEngine.Rect,
+                                                                   string)
+    IL_0239:  brfalse    IL_0243
+
+    IL_023e:  call       void [UnityEngine]UnityEngine.N3DS.Keyboard::Show()
+    IL_0243:  call       valuetype [UnityEngine]N3dsKeyboardResult [UnityEngine]UnityEngine.N3DS.Keyboard::GetResult()
+    IL_0248:  stloc.2
+    IL_0249:  ldc.r4     0.0
+    IL_024e:  ldc.r4     220.
+    IL_0253:  ldc.r4     60.
+    IL_0258:  ldc.r4     20.
+    IL_025d:  newobj     instance void [UnityEngine]UnityEngine.Rect::.ctor(float32,
+                                                                            float32,
+                                                                            float32,
+                                                                            float32)
+    IL_0262:  ldloca.s   V_2
+    IL_0264:  constrained. [UnityEngine]N3dsKeyboardResult
+    IL_026a:  callvirt   instance string [mscorlib]System.Object::ToString()
+    IL_026f:  call       void [UnityEngine]UnityEngine.GUI::Label(valuetype [UnityEngine]UnityEngine.Rect,
+                                                                  string)
+    IL_0274:  ldarg.0
+    IL_0275:  call       string [UnityEngine]UnityEngine.N3DS.Keyboard::GetText()
+    IL_027a:  stfld      string KeyboardScript::inputString
+    IL_027f:  ldc.r4     70.
+    IL_0284:  ldc.r4     220.
+    IL_0289:  ldc.r4     250.
+    IL_028e:  ldc.r4     20.
+    IL_0293:  newobj     instance void [UnityEngine]UnityEngine.Rect::.ctor(float32,
+                                                                            float32,
+                                                                            float32,
+                                                                            float32)
+    IL_0298:  ldarg.0
+    IL_0299:  ldfld      string KeyboardScript::inputString
+    IL_029e:  call       void [UnityEngine]UnityEngine.GUI::Label(valuetype [UnityEngine]UnityEngine.Rect,
+                                                                  string)
+    IL_02a3:  ret
+  } // end of method KeyboardScript::OnGUI
+
+  .method private hidebysig instance bool 
+          ButtonPressed(int32 xpos,
+                        int32& ypos,
+                        string label,
+                        int32& index,
+                        string[] enumNames) cil managed
+  {
+    // Code size       81 (0x51)
+    .maxstack  4
+    .locals init (bool V_0,
+             int32 V_1)
+    IL_0000:  ldc.i4.0
+    IL_0001:  stloc.0
+    IL_0002:  ldarg.1
+    IL_0003:  conv.r4
+    IL_0004:  ldarg.2
+    IL_0005:  ldind.i4
+    IL_0006:  conv.r4
+    IL_0007:  ldarg.0
+    IL_0008:  ldfld      int32 KeyboardScript::width
+    IL_000d:  conv.r4
+    IL_000e:  ldc.r4     25.
+    IL_0013:  newobj     instance void [UnityEngine]UnityEngine.Rect::.ctor(float32,
+                                                                            float32,
+                                                                            float32,
+                                                                            float32)
+    IL_0018:  ldarg.3
+    IL_0019:  ldarg.s    enumNames
+    IL_001b:  ldarg.s    index
+    IL_001d:  ldind.i4
+    IL_001e:  ldelem.ref
+    IL_001f:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_0024:  call       bool [UnityEngine]UnityEngine.GUI::Button(valuetype [UnityEngine]UnityEngine.Rect,
+                                                                   string)
+    IL_0029:  brfalse    IL_0048
+
+    IL_002e:  ldarg.s    index
+    IL_0030:  ldarg.s    index
+    IL_0032:  ldind.i4
+    IL_0033:  ldc.i4.1
+    IL_0034:  add
+    IL_0035:  dup
+    IL_0036:  stloc.1
+    IL_0037:  stind.i4
+    IL_0038:  ldloc.1
+    IL_0039:  ldarg.s    enumNames
+    IL_003b:  ldlen
+    IL_003c:  conv.i4
+    IL_003d:  blt        IL_0046
+
+    IL_0042:  ldarg.s    index
+    IL_0044:  ldc.i4.0
+    IL_0045:  stind.i4
+    IL_0046:  ldc.i4.1
+    IL_0047:  stloc.0
+    IL_0048:  ldarg.2
+    IL_0049:  ldarg.2
+    IL_004a:  ldind.i4
+    IL_004b:  ldc.i4.s   27
+    IL_004d:  add
+    IL_004e:  stind.i4
+    IL_004f:  ldloc.0
+    IL_0050:  ret
+  } // end of method KeyboardScript::ButtonPressed
+
+  .method private hidebysig instance bool 
+          ButtonPressed(int32 xpos,
+                        int32& ypos,
+                        string label,
+                        bool& flag) cil managed
+  {
+    // Code size       85 (0x55)
+    .maxstack  4
+    .locals init (bool V_0,
+             string V_1)
+    IL_0000:  ldc.i4.0
+    IL_0001:  stloc.0
+    IL_0002:  ldarg.s    flag
+    IL_0004:  ldind.i1
+    IL_0005:  brfalse    IL_0014
+
+    IL_000a:  ldstr      "Yes"
+    IL_000f:  br         IL_0019
+
+    IL_0014:  ldstr      "No"
+    IL_0019:  stloc.1
+    IL_001a:  ldarg.1
+    IL_001b:  conv.r4
+    IL_001c:  ldarg.2
+    IL_001d:  ldind.i4
+    IL_001e:  conv.r4
+    IL_001f:  ldarg.0
+    IL_0020:  ldfld      int32 KeyboardScript::width
+    IL_0025:  conv.r4
+    IL_0026:  ldc.r4     25.
+    IL_002b:  newobj     instance void [UnityEngine]UnityEngine.Rect::.ctor(float32,
+                                                                            float32,
+                                                                            float32,
+                                                                            float32)
+    IL_0030:  ldarg.3
+    IL_0031:  ldloc.1
+    IL_0032:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_0037:  call       bool [UnityEngine]UnityEngine.GUI::Button(valuetype [UnityEngine]UnityEngine.Rect,
+                                                                   string)
+    IL_003c:  brfalse    IL_004c
+
+    IL_0041:  ldarg.s    flag
+    IL_0043:  ldarg.s    flag
+    IL_0045:  ldind.i1
+    IL_0046:  ldc.i4.0
+    IL_0047:  ceq
+    IL_0049:  stind.i1
+    IL_004a:  ldc.i4.1
+    IL_004b:  stloc.0
+    IL_004c:  ldarg.2
+    IL_004d:  ldarg.2
+    IL_004e:  ldind.i4
+    IL_004f:  ldc.i4.s   27
+    IL_0051:  add
+    IL_0052:  stind.i4
+    IL_0053:  ldloc.0
+    IL_0054:  ret
+  } // end of method KeyboardScript::ButtonPressed
+
+  .method private hidebysig instance bool 
+          ButtonPressed(int32 xpos,
+                        int32& ypos,
+                        string label,
+                        int32& variable,
+                        int32 min,
+                        int32 max) cil managed
+  {
+    // Code size       82 (0x52)
+    .maxstack  4
+    .locals init (bool V_0,
+             int32 V_1)
+    IL_0000:  ldc.i4.0
+    IL_0001:  stloc.0
+    IL_0002:  ldarg.1
+    IL_0003:  conv.r4
+    IL_0004:  ldarg.2
+    IL_0005:  ldind.i4
+    IL_0006:  conv.r4
+    IL_0007:  ldarg.0
+    IL_0008:  ldfld      int32 KeyboardScript::width
+    IL_000d:  conv.r4
+    IL_000e:  ldc.r4     25.
+    IL_0013:  newobj     instance void [UnityEngine]UnityEngine.Rect::.ctor(float32,
+                                                                            float32,
+                                                                            float32,
+                                                                            float32)
+    IL_0018:  ldarg.3
+    IL_0019:  ldarg.s    variable
+    IL_001b:  ldind.i4
+    IL_001c:  box        [mscorlib]System.Int32
+    IL_0021:  call       string [mscorlib]System.String::Concat(object,
+                                                                object)
+    IL_0026:  call       bool [UnityEngine]UnityEngine.GUI::Button(valuetype [UnityEngine]UnityEngine.Rect,
+                                                                   string)
+    IL_002b:  brfalse    IL_0049
+
+    IL_0030:  ldarg.s    variable
+    IL_0032:  ldarg.s    variable
+    IL_0034:  ldind.i4
+    IL_0035:  ldc.i4.1
+    IL_0036:  add
+    IL_0037:  dup
+    IL_0038:  stloc.1
+    IL_0039:  stind.i4
+    IL_003a:  ldloc.1
+    IL_003b:  ldarg.s    max
+    IL_003d:  ble        IL_0047
+
+    IL_0042:  ldarg.s    variable
+    IL_0044:  ldarg.s    min
+    IL_0046:  stind.i4
+    IL_0047:  ldc.i4.1
+    IL_0048:  stloc.0
+    IL_0049:  ldarg.2
+    IL_004a:  ldarg.2
+    IL_004b:  ldind.i4
+    IL_004c:  ldc.i4.s   27
+    IL_004e:  add
+    IL_004f:  stind.i4
+    IL_0050:  ldloc.0
+    IL_0051:  ret
+  } // end of method KeyboardScript::ButtonPressed
+
+} // end of class KeyboardScript
+
+.class public auto ansi beforefieldinit FPS
+       extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .field private float32 speed
+  .custom instance void [UnityEngine]UnityEngine.SerializeField::.ctor() = ( 01 00 00 00 ) 
+  .field private class [UnityEngine]UnityEngine.Transform cam
+  .custom instance void [UnityEngine]UnityEngine.SerializeField::.ctor() = ( 01 00 00 00 ) 
+  .field private float32 sensitivity
+  .custom instance void [UnityEngine]UnityEngine.SerializeField::.ctor() = ( 01 00 00 00 ) 
+  .field private float32 h
+  .field private float32 v
+  .field private class [UnityEngine]UnityEngine.CharacterController controller
+  .field private valuetype [UnityEngine]UnityEngine.Vector3 playerVelocity
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       29 (0x1d)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  ldc.r4     5.
+    IL_0006:  stfld      float32 FPS::speed
+    IL_000b:  ldarg.0
+    IL_000c:  ldc.r4     2.
+    IL_0011:  stfld      float32 FPS::sensitivity
+    IL_0016:  ldarg.0
+    IL_0017:  call       instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor()
+    IL_001c:  ret
+  } // end of method FPS::.ctor
+
+  .method private hidebysig instance void 
+          Start() cil managed
+  {
+    // Code size       13 (0xd)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  ldarg.0
+    IL_0002:  call       instance !!0 [UnityEngine]UnityEngine.Component::GetComponent<class [UnityEngine]UnityEngine.CharacterController>()
+    IL_0007:  stfld      class [UnityEngine]UnityEngine.CharacterController FPS::controller
+    IL_000c:  ret
+  } // end of method FPS::Start
+
+  .method private hidebysig instance void 
+          Update() cil managed
+  {
+    // Code size       640 (0x280)
+    .maxstack  4
+    .locals init (valuetype [UnityEngine]UnityEngine.Vector3 V_0,
+             valuetype [UnityEngine]UnityEngine.Vector3 V_1,
+             float32 V_2,
+             float32 V_3,
+             valuetype [UnityEngine]UnityEngine.Vector3 V_4,
+             valuetype [UnityEngine]UnityEngine.Quaternion V_5,
+             float32 V_6)
+    IL_0000:  ldc.i4     0x40000000
+    IL_0005:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_000a:  brfalse    IL_001a
+
+    IL_000f:  ldarg.0
+    IL_0010:  ldc.r4     1.
+    IL_0015:  stfld      float32 FPS::v
+    IL_001a:  ldc.i4.4
+    IL_001b:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_0020:  brfalse    IL_0030
+
+    IL_0025:  ldarg.0
+    IL_0026:  ldc.r4     -1.
+    IL_002b:  stfld      float32 FPS::v
+    IL_0030:  ldc.i4     0x40000000
+    IL_0035:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonRelease(valuetype [UnityEngine]N3dsButton)
+    IL_003a:  brtrue     IL_004a
+
+    IL_003f:  ldc.i4.4
+    IL_0040:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonRelease(valuetype [UnityEngine]N3dsButton)
+    IL_0045:  brfalse    IL_0055
+
+    IL_004a:  ldarg.0
+    IL_004b:  ldc.r4     0.0
+    IL_0050:  stfld      float32 FPS::v
+    IL_0055:  ldc.i4     0x10000000
+    IL_005a:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_005f:  brfalse    IL_006f
+
+    IL_0064:  ldarg.0
+    IL_0065:  ldc.r4     1.
+    IL_006a:  stfld      float32 FPS::h
+    IL_006f:  ldc.i4     0x20000000
+    IL_0074:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_0079:  brfalse    IL_0089
+
+    IL_007e:  ldarg.0
+    IL_007f:  ldc.r4     -1.
+    IL_0084:  stfld      float32 FPS::h
+    IL_0089:  ldc.i4     0x10000000
+    IL_008e:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonRelease(valuetype [UnityEngine]N3dsButton)
+    IL_0093:  brtrue     IL_00a7
+
+    IL_0098:  ldc.i4     0x20000000
+    IL_009d:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonRelease(valuetype [UnityEngine]N3dsButton)
+    IL_00a2:  brfalse    IL_00b2
+
+    IL_00a7:  ldarg.0
+    IL_00a8:  ldc.r4     0.0
+    IL_00ad:  stfld      float32 FPS::h
+    IL_00b2:  ldarg.0
+    IL_00b3:  call       instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_00b8:  callvirt   instance valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Transform::get_right()
+    IL_00bd:  ldarg.0
+    IL_00be:  ldfld      float32 FPS::h
+    IL_00c3:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector3::op_Multiply(valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                  float32)
+    IL_00c8:  ldarg.0
+    IL_00c9:  call       instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_00ce:  callvirt   instance valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Transform::get_forward()
+    IL_00d3:  ldarg.0
+    IL_00d4:  ldfld      float32 FPS::v
+    IL_00d9:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector3::op_Multiply(valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                  float32)
+    IL_00de:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector3::op_Addition(valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                  valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_00e3:  stloc.0
+    IL_00e4:  ldarg.0
+    IL_00e5:  ldfld      class [UnityEngine]UnityEngine.CharacterController FPS::controller
+    IL_00ea:  ldloc.0
+    IL_00eb:  ldarg.0
+    IL_00ec:  ldfld      float32 FPS::speed
+    IL_00f1:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector3::op_Multiply(valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                  float32)
+    IL_00f6:  call       float32 [UnityEngine]UnityEngine.Time::get_deltaTime()
+    IL_00fb:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector3::op_Multiply(valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                  float32)
+    IL_0100:  callvirt   instance valuetype [UnityEngine]UnityEngine.CollisionFlags [UnityEngine]UnityEngine.CharacterController::Move(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_0105:  pop
+    IL_0106:  ldarg.0
+    IL_0107:  ldflda     valuetype [UnityEngine]UnityEngine.Vector3 FPS::playerVelocity
+    IL_010c:  dup
+    IL_010d:  ldfld      float32 [UnityEngine]UnityEngine.Vector3::y
+    IL_0112:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Physics::get_gravity()
+    IL_0117:  stloc.1
+    IL_0118:  ldloca.s   V_1
+    IL_011a:  ldfld      float32 [UnityEngine]UnityEngine.Vector3::y
+    IL_011f:  call       float32 [UnityEngine]UnityEngine.Time::get_deltaTime()
+    IL_0124:  mul
+    IL_0125:  add
+    IL_0126:  stfld      float32 [UnityEngine]UnityEngine.Vector3::y
+    IL_012b:  ldarg.0
+    IL_012c:  ldfld      class [UnityEngine]UnityEngine.CharacterController FPS::controller
+    IL_0131:  ldarg.0
+    IL_0132:  ldfld      valuetype [UnityEngine]UnityEngine.Vector3 FPS::playerVelocity
+    IL_0137:  call       float32 [UnityEngine]UnityEngine.Time::get_deltaTime()
+    IL_013c:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector3::op_Multiply(valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                  float32)
+    IL_0141:  callvirt   instance valuetype [UnityEngine]UnityEngine.CollisionFlags [UnityEngine]UnityEngine.CharacterController::Move(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_0146:  pop
+    IL_0147:  ldc.r4     0.0
+    IL_014c:  stloc.2
+    IL_014d:  ldc.r4     0.0
+    IL_0152:  stloc.3
+    IL_0153:  ldc.i4     0x1000000
+    IL_0158:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_015d:  brtrue     IL_0171
+
+    IL_0162:  ldc.i4     0x100
+    IL_0167:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_016c:  brfalse    IL_017e
+
+    IL_0171:  ldc.r4     1.
+    IL_0176:  ldarg.0
+    IL_0177:  ldfld      float32 FPS::sensitivity
+    IL_017c:  mul
+    IL_017d:  stloc.2
+    IL_017e:  ldc.i4     0x2000000
+    IL_0183:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_0188:  brtrue     IL_019c
+
+    IL_018d:  ldc.i4     0x200
+    IL_0192:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_0197:  brfalse    IL_01a9
+
+    IL_019c:  ldc.r4     -1.
+    IL_01a1:  ldarg.0
+    IL_01a2:  ldfld      float32 FPS::sensitivity
+    IL_01a7:  mul
+    IL_01a8:  stloc.2
+    IL_01a9:  ldc.i4     0x4000000
+    IL_01ae:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_01b3:  brtrue     IL_01c7
+
+    IL_01b8:  ldc.i4     0x8000
+    IL_01bd:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_01c2:  brfalse    IL_01d4
+
+    IL_01c7:  ldc.r4     1.
+    IL_01cc:  ldarg.0
+    IL_01cd:  ldfld      float32 FPS::sensitivity
+    IL_01d2:  mul
+    IL_01d3:  stloc.3
+    IL_01d4:  ldc.i4     0x8000000
+    IL_01d9:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_01de:  brtrue     IL_01f2
+
+    IL_01e3:  ldc.i4     0x4000
+    IL_01e8:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonHold(valuetype [UnityEngine]N3dsButton)
+    IL_01ed:  brfalse    IL_01ff
+
+    IL_01f2:  ldc.r4     -1.
+    IL_01f7:  ldarg.0
+    IL_01f8:  ldfld      float32 FPS::sensitivity
+    IL_01fd:  mul
+    IL_01fe:  stloc.3
+    IL_01ff:  ldarg.0
+    IL_0200:  call       instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_0205:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector3::get_up()
+    IL_020a:  ldloc.2
+    IL_020b:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector3::op_Multiply(valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                  float32)
+    IL_0210:  callvirt   instance void [UnityEngine]UnityEngine.Transform::Rotate(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_0215:  ldarg.0
+    IL_0216:  ldfld      class [UnityEngine]UnityEngine.Transform FPS::cam
+    IL_021b:  callvirt   instance valuetype [UnityEngine]UnityEngine.Quaternion [UnityEngine]UnityEngine.Transform::get_rotation()
+    IL_0220:  stloc.s    V_5
+    IL_0222:  ldloca.s   V_5
+    IL_0224:  call       instance valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Quaternion::get_eulerAngles()
+    IL_0229:  stloc.s    V_4
+    IL_022b:  ldloca.s   V_4
+    IL_022d:  ldfld      float32 [UnityEngine]UnityEngine.Vector3::x
+    IL_0232:  ldloc.3
+    IL_0233:  sub
+    IL_0234:  stloc.s    V_6
+    IL_0236:  ldloc.s    V_6
+    IL_0238:  ldc.r4     180.
+    IL_023d:  ble.un     IL_024c
+
+    IL_0242:  ldloc.s    V_6
+    IL_0244:  ldc.r4     360.
+    IL_0249:  sub
+    IL_024a:  stloc.s    V_6
+    IL_024c:  ldloc.s    V_6
+    IL_024e:  ldc.r4     -90.
+    IL_0253:  ldc.r4     90.
+    IL_0258:  call       float32 [UnityEngine]UnityEngine.Mathf::Clamp(float32,
+                                                                       float32,
+                                                                       float32)
+    IL_025d:  stloc.s    V_6
+    IL_025f:  ldarg.0
+    IL_0260:  ldfld      class [UnityEngine]UnityEngine.Transform FPS::cam
+    IL_0265:  ldloc.s    V_6
+    IL_0267:  ldloca.s   V_4
+    IL_0269:  ldfld      float32 [UnityEngine]UnityEngine.Vector3::y
+    IL_026e:  ldloca.s   V_4
+    IL_0270:  ldfld      float32 [UnityEngine]UnityEngine.Vector3::z
+    IL_0275:  call       valuetype [UnityEngine]UnityEngine.Quaternion [UnityEngine]UnityEngine.Quaternion::Euler(float32,
+                                                                                                                  float32,
+                                                                                                                  float32)
+    IL_027a:  callvirt   instance void [UnityEngine]UnityEngine.Transform::set_rotation(valuetype [UnityEngine]UnityEngine.Quaternion)
+    IL_027f:  ret
+  } // end of method FPS::Update
+
+} // end of class FPS
+
+.class public auto ansi beforefieldinit Hand_System
+       extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .field private class [UnityEngine]UnityEngine.Transform Hand_Transform
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 0E 48 61 6E 64 20 56 61 72 69 61 62 6C 65   // ...Hand Variable
+                                                                                    73 00 00 )                                        // s..
+  .custom instance void [UnityEngine]UnityEngine.SerializeField::.ctor() = ( 01 00 00 00 ) 
+  .field private bool Is_Holding
+  .field private class [UnityEngine]UnityEngine.GameObject Hand_Content
+  .field private string Hand_Content_ID
+  .field private class [UnityEngine]UnityEngine.GameObject Shelf
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 0F 46 75 72 6E 69 74 75 72 65 73 20 4D 65   // ...Furnitures Me
+                                                                                    73 68 00 00 )                                     // sh..
+  .custom instance void [UnityEngine]UnityEngine.SerializeField::.ctor() = ( 01 00 00 00 ) 
+  .field private class [UnityEngine]UnityEngine.GameObject Fridge
+  .custom instance void [UnityEngine]UnityEngine.SerializeField::.ctor() = ( 01 00 00 00 ) 
+  .field private class [UnityEngine]UnityEngine.Material Build_Tex
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 12 46 75 72 6E 69 74 75 72 65 73 20 54 65   // ...Furnitures Te
+                                                                                    78 74 75 72 65 00 00 )                            // xture..
+  .custom instance void [UnityEngine]UnityEngine.SerializeField::.ctor() = ( 01 00 00 00 ) 
+  .field private class [UnityEngine]UnityEngine.Material Shelf_Tex
+  .custom instance void [UnityEngine]UnityEngine.SerializeField::.ctor() = ( 01 00 00 00 ) 
+  .field private class [UnityEngine]UnityEngine.Material Fridge_Tex
+  .custom instance void [UnityEngine]UnityEngine.SerializeField::.ctor() = ( 01 00 00 00 ) 
+  .field private class [UnityEngine]UnityEngine.Transform Shelf_T
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 14 46 75 72 6E 69 74 75 72 65 73 20 54 72   // ...Furnitures Tr
+                                                                                    61 6E 73 66 6F 72 6D 00 00 )                      // ansform..
+  .custom instance void [UnityEngine]UnityEngine.SerializeField::.ctor() = ( 01 00 00 00 ) 
+  .field private class [UnityEngine]UnityEngine.Transform Fridge_T
+  .custom instance void [UnityEngine]UnityEngine.SerializeField::.ctor() = ( 01 00 00 00 ) 
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor()
+    IL_0006:  ret
+  } // end of method Hand_System::.ctor
+
+  .method private hidebysig instance void 
+          Start() cil managed
+  {
+    // Code size       117 (0x75)
+    .maxstack  4
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Shelf_T
+    IL_0006:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_000b:  ldc.r4     2.5
+    IL_0010:  ldc.r4     5.
+    IL_0015:  ldc.r4     230.
+    IL_001a:  newobj     instance void [UnityEngine]UnityEngine.Vector3::.ctor(float32,
+                                                                               float32,
+                                                                               float32)
+    IL_001f:  callvirt   instance void [UnityEngine]UnityEngine.Transform::set_localScale(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_0024:  ldarg.0
+    IL_0025:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Shelf
+    IL_002a:  callvirt   instance !!0 [UnityEngine]UnityEngine.GameObject::GetComponent<class [UnityEngine]UnityEngine.Renderer>()
+    IL_002f:  ldarg.0
+    IL_0030:  ldfld      class [UnityEngine]UnityEngine.Material Hand_System::Build_Tex
+    IL_0035:  callvirt   instance void [UnityEngine]UnityEngine.Renderer::set_material(class [UnityEngine]UnityEngine.Material)
+    IL_003a:  ldarg.0
+    IL_003b:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Fridge_T
+    IL_0040:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_0045:  ldc.r4     266.5
+    IL_004a:  ldc.r4     266.5
+    IL_004f:  ldc.r4     266.5
+    IL_0054:  newobj     instance void [UnityEngine]UnityEngine.Vector3::.ctor(float32,
+                                                                               float32,
+                                                                               float32)
+    IL_0059:  callvirt   instance void [UnityEngine]UnityEngine.Transform::set_localScale(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_005e:  ldarg.0
+    IL_005f:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Fridge
+    IL_0064:  callvirt   instance !!0 [UnityEngine]UnityEngine.GameObject::GetComponent<class [UnityEngine]UnityEngine.Renderer>()
+    IL_0069:  ldarg.0
+    IL_006a:  ldfld      class [UnityEngine]UnityEngine.Material Hand_System::Build_Tex
+    IL_006f:  callvirt   instance void [UnityEngine]UnityEngine.Renderer::set_material(class [UnityEngine]UnityEngine.Material)
+    IL_0074:  ret
+  } // end of method Hand_System::Start
+
+  .method public hidebysig instance void 
+          Select_Shelf() cil managed
+  {
+    // Code size       133 (0x85)
+    .maxstack  6
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0006:  ldnull
+    IL_0007:  call       bool [UnityEngine]UnityEngine.Object::op_Inequality(class [UnityEngine]UnityEngine.Object,
+                                                                             class [UnityEngine]UnityEngine.Object)
+    IL_000c:  brfalse    IL_001c
+
+    IL_0011:  ldarg.0
+    IL_0012:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0017:  call       void [UnityEngine]UnityEngine.Object::Destroy(class [UnityEngine]UnityEngine.Object)
+    IL_001c:  ldarg.0
+    IL_001d:  ldstr      "Shelf"
+    IL_0022:  stfld      string Hand_System::Hand_Content_ID
+    IL_0027:  ldarg.0
+    IL_0028:  ldarg.0
+    IL_0029:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Shelf
+    IL_002e:  ldarg.0
+    IL_002f:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Hand_Transform
+    IL_0034:  callvirt   instance valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Transform::get_position()
+    IL_0039:  ldc.r4     1.
+    IL_003e:  ldc.r4     0.0
+    IL_0043:  ldc.r4     0.0
+    IL_0048:  newobj     instance void [UnityEngine]UnityEngine.Vector3::.ctor(float32,
+                                                                               float32,
+                                                                               float32)
+    IL_004d:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector3::op_Addition(valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                  valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_0052:  ldarg.0
+    IL_0053:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Shelf_T
+    IL_0058:  callvirt   instance valuetype [UnityEngine]UnityEngine.Quaternion [UnityEngine]UnityEngine.Transform::get_rotation()
+    IL_005d:  call       !!0 [UnityEngine]UnityEngine.Object::Instantiate<class [UnityEngine]UnityEngine.GameObject>(!!0,
+                                                                                                                     valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                     valuetype [UnityEngine]UnityEngine.Quaternion)
+    IL_0062:  stfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0067:  ldarg.0
+    IL_0068:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_006d:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.GameObject::get_transform()
+    IL_0072:  ldarg.0
+    IL_0073:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Hand_Transform
+    IL_0078:  callvirt   instance void [UnityEngine]UnityEngine.Transform::SetParent(class [UnityEngine]UnityEngine.Transform)
+    IL_007d:  ldarg.0
+    IL_007e:  ldc.i4.1
+    IL_007f:  stfld      bool Hand_System::Is_Holding
+    IL_0084:  ret
+  } // end of method Hand_System::Select_Shelf
+
+  .method public hidebysig instance void 
+          Select_Fridge() cil managed
+  {
+    // Code size       133 (0x85)
+    .maxstack  6
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0006:  ldnull
+    IL_0007:  call       bool [UnityEngine]UnityEngine.Object::op_Inequality(class [UnityEngine]UnityEngine.Object,
+                                                                             class [UnityEngine]UnityEngine.Object)
+    IL_000c:  brfalse    IL_001c
+
+    IL_0011:  ldarg.0
+    IL_0012:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0017:  call       void [UnityEngine]UnityEngine.Object::Destroy(class [UnityEngine]UnityEngine.Object)
+    IL_001c:  ldarg.0
+    IL_001d:  ldstr      "Fridge"
+    IL_0022:  stfld      string Hand_System::Hand_Content_ID
+    IL_0027:  ldarg.0
+    IL_0028:  ldarg.0
+    IL_0029:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Fridge
+    IL_002e:  ldarg.0
+    IL_002f:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Hand_Transform
+    IL_0034:  callvirt   instance valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Transform::get_position()
+    IL_0039:  ldc.r4     0.0
+    IL_003e:  ldc.r4     -1.55
+    IL_0043:  ldc.r4     0.0
+    IL_0048:  newobj     instance void [UnityEngine]UnityEngine.Vector3::.ctor(float32,
+                                                                               float32,
+                                                                               float32)
+    IL_004d:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector3::op_Addition(valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                  valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_0052:  ldarg.0
+    IL_0053:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Fridge_T
+    IL_0058:  callvirt   instance valuetype [UnityEngine]UnityEngine.Quaternion [UnityEngine]UnityEngine.Transform::get_rotation()
+    IL_005d:  call       !!0 [UnityEngine]UnityEngine.Object::Instantiate<class [UnityEngine]UnityEngine.GameObject>(!!0,
+                                                                                                                     valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                     valuetype [UnityEngine]UnityEngine.Quaternion)
+    IL_0062:  stfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0067:  ldarg.0
+    IL_0068:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_006d:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.GameObject::get_transform()
+    IL_0072:  ldarg.0
+    IL_0073:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Hand_Transform
+    IL_0078:  callvirt   instance void [UnityEngine]UnityEngine.Transform::SetParent(class [UnityEngine]UnityEngine.Transform)
+    IL_007d:  ldarg.0
+    IL_007e:  ldc.i4.1
+    IL_007f:  stfld      bool Hand_System::Is_Holding
+    IL_0084:  ret
+  } // end of method Hand_System::Select_Fridge
+
+  .method private hidebysig instance void 
+          Place_Furniture() cil managed
+  {
+    // Code size       293 (0x125)
+    .maxstack  3
+    .locals init (class [UnityEngine]UnityEngine.GameObject V_0,
+             class [UnityEngine]UnityEngine.GameObject V_1)
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      string Hand_System::Hand_Content_ID
+    IL_0006:  ldstr      "Shelf"
+    IL_000b:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_0010:  brfalse    IL_0093
+
+    IL_0015:  ldarg.0
+    IL_0016:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Shelf
+    IL_001b:  ldarg.0
+    IL_001c:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0021:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.GameObject::get_transform()
+    IL_0026:  callvirt   instance valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Transform::get_position()
+    IL_002b:  ldarg.0
+    IL_002c:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0031:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.GameObject::get_transform()
+    IL_0036:  callvirt   instance valuetype [UnityEngine]UnityEngine.Quaternion [UnityEngine]UnityEngine.Transform::get_rotation()
+    IL_003b:  call       !!0 [UnityEngine]UnityEngine.Object::Instantiate<class [UnityEngine]UnityEngine.GameObject>(!!0,
+                                                                                                                     valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                     valuetype [UnityEngine]UnityEngine.Quaternion)
+    IL_0040:  stloc.0
+    IL_0041:  ldloc.0
+    IL_0042:  callvirt   instance !!0 [UnityEngine]UnityEngine.GameObject::GetComponent<class [UnityEngine]UnityEngine.Renderer>()
+    IL_0047:  ldarg.0
+    IL_0048:  ldfld      class [UnityEngine]UnityEngine.Material Hand_System::Shelf_Tex
+    IL_004d:  callvirt   instance void [UnityEngine]UnityEngine.Renderer::set_material(class [UnityEngine]UnityEngine.Material)
+    IL_0052:  ldloc.0
+    IL_0053:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.GameObject::get_transform()
+    IL_0058:  ldarg.0
+    IL_0059:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Shelf_T
+    IL_005e:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_0063:  callvirt   instance valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Transform::get_localScale()
+    IL_0068:  callvirt   instance void [UnityEngine]UnityEngine.Transform::set_localScale(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_006d:  ldarg.0
+    IL_006e:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0073:  call       void [UnityEngine]UnityEngine.Object::Destroy(class [UnityEngine]UnityEngine.Object)
+    IL_0078:  ldarg.0
+    IL_0079:  ldnull
+    IL_007a:  stfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_007f:  ldc.i4.s   100
+    IL_0081:  call       bool Money_System::RemoveMoney(int32)
+    IL_0086:  pop
+    IL_0087:  ldarg.0
+    IL_0088:  ldc.i4.0
+    IL_0089:  stfld      bool Hand_System::Is_Holding
+    IL_008e:  br         IL_0124
+
+    IL_0093:  ldarg.0
+    IL_0094:  ldfld      string Hand_System::Hand_Content_ID
+    IL_0099:  ldstr      "Fridge"
+    IL_009e:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_00a3:  brfalse    IL_0124
+
+    IL_00a8:  ldarg.0
+    IL_00a9:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Fridge
+    IL_00ae:  ldarg.0
+    IL_00af:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_00b4:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.GameObject::get_transform()
+    IL_00b9:  callvirt   instance valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Transform::get_position()
+    IL_00be:  ldarg.0
+    IL_00bf:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_00c4:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.GameObject::get_transform()
+    IL_00c9:  callvirt   instance valuetype [UnityEngine]UnityEngine.Quaternion [UnityEngine]UnityEngine.Transform::get_rotation()
+    IL_00ce:  call       !!0 [UnityEngine]UnityEngine.Object::Instantiate<class [UnityEngine]UnityEngine.GameObject>(!!0,
+                                                                                                                     valuetype [UnityEngine]UnityEngine.Vector3,
+                                                                                                                     valuetype [UnityEngine]UnityEngine.Quaternion)
+    IL_00d3:  stloc.1
+    IL_00d4:  ldloc.1
+    IL_00d5:  callvirt   instance !!0 [UnityEngine]UnityEngine.GameObject::GetComponent<class [UnityEngine]UnityEngine.Renderer>()
+    IL_00da:  ldarg.0
+    IL_00db:  ldfld      class [UnityEngine]UnityEngine.Material Hand_System::Fridge_Tex
+    IL_00e0:  callvirt   instance void [UnityEngine]UnityEngine.Renderer::set_material(class [UnityEngine]UnityEngine.Material)
+    IL_00e5:  ldloc.1
+    IL_00e6:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.GameObject::get_transform()
+    IL_00eb:  ldarg.0
+    IL_00ec:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Fridge_T
+    IL_00f1:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_00f6:  callvirt   instance valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Transform::get_localScale()
+    IL_00fb:  callvirt   instance void [UnityEngine]UnityEngine.Transform::set_localScale(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_0100:  ldarg.0
+    IL_0101:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0106:  call       void [UnityEngine]UnityEngine.Object::Destroy(class [UnityEngine]UnityEngine.Object)
+    IL_010b:  ldarg.0
+    IL_010c:  ldnull
+    IL_010d:  stfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0112:  ldc.i4     0x96
+    IL_0117:  call       bool Money_System::RemoveMoney(int32)
+    IL_011c:  pop
+    IL_011d:  ldarg.0
+    IL_011e:  ldc.i4.0
+    IL_011f:  stfld      bool Hand_System::Is_Holding
+    IL_0124:  ret
+  } // end of method Hand_System::Place_Furniture
+
+  .method private hidebysig instance void 
+          Update() cil managed
+  {
+    // Code size       166 (0xa6)
+    .maxstack  4
+    IL_0000:  ldc.i4.1
+    IL_0001:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonRelease(valuetype [UnityEngine]N3dsButton)
+    IL_0006:  brfalse    IL_001c
+
+    IL_000b:  ldarg.0
+    IL_000c:  ldfld      bool Hand_System::Is_Holding
+    IL_0011:  brfalse    IL_001c
+
+    IL_0016:  ldarg.0
+    IL_0017:  call       instance void Hand_System::Place_Furniture()
+    IL_001c:  ldc.i4.2
+    IL_001d:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonRelease(valuetype [UnityEngine]N3dsButton)
+    IL_0022:  brfalse    IL_0044
+
+    IL_0027:  ldarg.0
+    IL_0028:  ldfld      bool Hand_System::Is_Holding
+    IL_002d:  brfalse    IL_0044
+
+    IL_0032:  ldarg.0
+    IL_0033:  ldfld      class [UnityEngine]UnityEngine.GameObject Hand_System::Hand_Content
+    IL_0038:  call       void [UnityEngine]UnityEngine.Object::Destroy(class [UnityEngine]UnityEngine.Object)
+    IL_003d:  ldarg.0
+    IL_003e:  ldc.i4.0
+    IL_003f:  stfld      bool Hand_System::Is_Holding
+    IL_0044:  ldarg.0
+    IL_0045:  ldfld      bool Hand_System::Is_Holding
+    IL_004a:  brfalse    IL_00a5
+
+    IL_004f:  ldc.i4.s   32
+    IL_0051:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonRelease(valuetype [UnityEngine]N3dsButton)
+    IL_0056:  brfalse    IL_007a
+
+    IL_005b:  ldarg.0
+    IL_005c:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Hand_Transform
+    IL_0061:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_0066:  ldc.r4     -10.
+    IL_006b:  ldc.r4     0.0
+    IL_0070:  ldc.r4     0.0
+    IL_0075:  callvirt   instance void [UnityEngine]UnityEngine.Transform::Rotate(float32,
+                                                                                  float32,
+                                                                                  float32)
+    IL_007a:  ldc.i4.s   16
+    IL_007c:  call       bool [UnityEngine]UnityEngine.N3DS.GamePad::GetButtonRelease(valuetype [UnityEngine]N3dsButton)
+    IL_0081:  brfalse    IL_00a5
+
+    IL_0086:  ldarg.0
+    IL_0087:  ldfld      class [UnityEngine]UnityEngine.Transform Hand_System::Hand_Transform
+    IL_008c:  callvirt   instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_0091:  ldc.r4     10.
+    IL_0096:  ldc.r4     0.0
+    IL_009b:  ldc.r4     0.0
+    IL_00a0:  callvirt   instance void [UnityEngine]UnityEngine.Transform::Rotate(float32,
+                                                                                  float32,
+                                                                                  float32)
+    IL_00a5:  ret
+  } // end of method Hand_System::Update
+
+} // end of class Hand_System
+
+.class public auto ansi beforefieldinit Money_System
+       extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .field private class [UnityEngine.UI]UnityEngine.UI.Text Money_T
+  .field public static int32 Money_Amt
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor()
+    IL_0006:  ret
+  } // end of method Money_System::.ctor
+
+  .method public hidebysig static void  AddMoney(int32 amt) cil managed
+  {
+    // Code size       13 (0xd)
+    .maxstack  8
+    IL_0000:  ldsfld     int32 Money_System::Money_Amt
+    IL_0005:  ldarg.0
+    IL_0006:  add
+    IL_0007:  stsfld     int32 Money_System::Money_Amt
+    IL_000c:  ret
+  } // end of method Money_System::AddMoney
+
+  .method public hidebysig static bool  RemoveMoney(int32 amt) cil managed
+  {
+    // Code size       37 (0x25)
+    .maxstack  8
+    IL_0000:  ldsfld     int32 Money_System::Money_Amt
+    IL_0005:  ldarg.0
+    IL_0006:  blt        IL_0019
+
+    IL_000b:  ldsfld     int32 Money_System::Money_Amt
+    IL_0010:  ldarg.0
+    IL_0011:  sub
+    IL_0012:  stsfld     int32 Money_System::Money_Amt
+    IL_0017:  ldc.i4.1
+    IL_0018:  ret
+
+    IL_0019:  ldstr      "Pas assez d'argent !"
+    IL_001e:  call       void [UnityEngine]UnityEngine.Debug::Log(object)
+    IL_0023:  ldc.i4.0
+    IL_0024:  ret
+  } // end of method Money_System::RemoveMoney
+
+  .method private hidebysig instance void 
+          Start() cil managed
+  {
+    // Code size       13 (0xd)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  ldarg.0
+    IL_0002:  call       instance !!0 [UnityEngine]UnityEngine.Component::GetComponent<class [UnityEngine.UI]UnityEngine.UI.Text>()
+    IL_0007:  stfld      class [UnityEngine.UI]UnityEngine.UI.Text Money_System::Money_T
+    IL_000c:  ret
+  } // end of method Money_System::Start
+
+  .method private hidebysig instance void 
+          Update() cil managed
+  {
+    // Code size       55 (0x37)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text Money_System::Money_T
+    IL_0006:  ldnull
+    IL_0007:  call       bool [UnityEngine]UnityEngine.Object::op_Inequality(class [UnityEngine]UnityEngine.Object,
+                                                                             class [UnityEngine]UnityEngine.Object)
+    IL_000c:  brfalse    IL_0036
+
+    IL_0011:  ldarg.0
+    IL_0012:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text Money_System::Money_T
+    IL_0017:  ldstr      "Money: $"
+    IL_001c:  ldsflda    int32 Money_System::Money_Amt
+    IL_0021:  constrained. [mscorlib]System.Int32
+    IL_0027:  callvirt   instance string [mscorlib]System.Object::ToString()
+    IL_002c:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_0031:  callvirt   instance void [UnityEngine.UI]UnityEngine.UI.Text::set_text(string)
+    IL_0036:  ret
+  } // end of method Money_System::Update
+
+  .method private hidebysig specialname rtspecialname static 
+          void  .cctor() cil managed
+  {
+    // Code size       11 (0xb)
+    .maxstack  8
+    IL_0000:  ldc.i4     0x3e8
+    IL_0005:  stsfld     int32 Money_System::Money_Amt
+    IL_000a:  ret
+  } // end of method Money_System::.cctor
+
+} // end of class Money_System
+
+.class public auto ansi beforefieldinit Settings_Button
+       extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .field public class [UnityEngine.UI]UnityEngine.UI.Button shopButton
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 16 53 68 6F 70 20 42 75 74 74 6F 6E 20 43   // ...Shop Button C
+                                                                                    6F 6D 70 6F 6E 65 6E 74 73 00 00 )                // omponents..
+  .field public class [UnityEngine.UI]UnityEngine.UI.Image shopImage
+  .field public class [UnityEngine.UI]UnityEngine.UI.Text shopText
+  .field public class [UnityEngine.UI]UnityEngine.UI.Button settingsButton
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 1A 53 65 74 74 69 6E 67 73 20 42 75 74 74   // ...Settings Butt
+                                                                                    6F 6E 20 43 6F 6D 70 6F 6E 65 6E 74 73 00 00 )    // on Components..
+  .field public class [UnityEngine.UI]UnityEngine.UI.Image settingsImage
+  .field public class [UnityEngine.UI]UnityEngine.UI.Text settingsText
+  .field public class [UnityEngine.UI]UnityEngine.UI.Button crossButton
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 17 43 72 6F 73 73 20 62 75 74 74 6F 6E 20   // ...Cross button 
+                                                                                    43 6F 6D 70 6F 6E 65 6E 74 73 00 00 )             // Components..
+  .field public class [UnityEngine.UI]UnityEngine.UI.Image crossImage
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor()
+    IL_0006:  ret
+  } // end of method Settings_Button::.ctor
+
+  .method public hidebysig instance void 
+          SettingsButtonClicked() cil managed
+  {
+    // Code size       97 (0x61)
+    .maxstack  2
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button Settings_Button::shopButton
+    IL_0006:  ldc.i4.0
+    IL_0007:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_000c:  ldarg.0
+    IL_000d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image Settings_Button::shopImage
+    IL_0012:  ldc.i4.0
+    IL_0013:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0018:  ldarg.0
+    IL_0019:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text Settings_Button::shopText
+    IL_001e:  ldc.i4.0
+    IL_001f:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0024:  ldarg.0
+    IL_0025:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button Settings_Button::settingsButton
+    IL_002a:  ldc.i4.0
+    IL_002b:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0030:  ldarg.0
+    IL_0031:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image Settings_Button::settingsImage
+    IL_0036:  ldc.i4.0
+    IL_0037:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_003c:  ldarg.0
+    IL_003d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text Settings_Button::settingsText
+    IL_0042:  ldc.i4.0
+    IL_0043:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0048:  ldarg.0
+    IL_0049:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button Settings_Button::crossButton
+    IL_004e:  ldc.i4.1
+    IL_004f:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0054:  ldarg.0
+    IL_0055:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image Settings_Button::crossImage
+    IL_005a:  ldc.i4.1
+    IL_005b:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0060:  ret
+  } // end of method Settings_Button::SettingsButtonClicked
+
+} // end of class Settings_Button
+
+.class public auto ansi beforefieldinit ShopBuy_Button
+       extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .field public class Shop_Button shop_Button
+  .field public class Hand_System hand_System
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 15 48 61 6E 64 20 53 79 73 74 65 6D 20 52   // ...Hand System R
+                                                                                    65 66 65 72 65 6E 63 65 00 00 )                   // eference..
+  .field public class [UnityEngine.UI]UnityEngine.UI.Button shelfBuy_Button
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 1B 53 68 65 6C 66 20 42 75 79 20 42 75 74   // ...Shelf Buy But
+                                                                                    74 6F 6E 20 43 6F 6D 70 6F 6E 65 6E 74 73 00 00 ) // ton Components..
+  .field public class [UnityEngine.UI]UnityEngine.UI.Text shelfBuy_Text
+  .field public class [UnityEngine.UI]UnityEngine.UI.Image shelfBuy_Image
+  .field public class [UnityEngine.UI]UnityEngine.UI.Button fridgeBuy_Button
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 1C 46 72 69 64 67 65 20 42 75 79 20 42 75   // ...Fridge Buy Bu
+                                                                                    74 74 6F 6E 20 43 6F 6D 70 6F 6E 65 6E 74 73 00   // tton Components.
+                                                                                    00 ) 
+  .field public class [UnityEngine.UI]UnityEngine.UI.Text fridgeBuy_Text
+  .field public class [UnityEngine.UI]UnityEngine.UI.Image fridgeBuy_Image
+  .field public class [UnityEngine.UI]UnityEngine.UI.Button cross_Button
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 17 43 72 6F 73 73 20 42 75 74 74 6F 6E 20   // ...Cross Button 
+                                                                                    43 6F 6D 70 6F 6E 65 6E 74 73 00 00 )             // Components..
+  .field public class [UnityEngine.UI]UnityEngine.UI.Image cross_Image
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor()
+    IL_0006:  ret
+  } // end of method ShopBuy_Button::.ctor
+
+  .method private hidebysig instance void 
+          Start() cil managed
+  {
+    // Code size       97 (0x61)
+    .maxstack  2
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button ShopBuy_Button::shelfBuy_Button
+    IL_0006:  ldc.i4.0
+    IL_0007:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_000c:  ldarg.0
+    IL_000d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text ShopBuy_Button::shelfBuy_Text
+    IL_0012:  ldc.i4.0
+    IL_0013:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0018:  ldarg.0
+    IL_0019:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image ShopBuy_Button::shelfBuy_Image
+    IL_001e:  ldc.i4.0
+    IL_001f:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0024:  ldarg.0
+    IL_0025:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button ShopBuy_Button::fridgeBuy_Button
+    IL_002a:  ldc.i4.0
+    IL_002b:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0030:  ldarg.0
+    IL_0031:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text ShopBuy_Button::fridgeBuy_Text
+    IL_0036:  ldc.i4.0
+    IL_0037:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_003c:  ldarg.0
+    IL_003d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image ShopBuy_Button::fridgeBuy_Image
+    IL_0042:  ldc.i4.0
+    IL_0043:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0048:  ldarg.0
+    IL_0049:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button ShopBuy_Button::cross_Button
+    IL_004e:  ldc.i4.0
+    IL_004f:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0054:  ldarg.0
+    IL_0055:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image ShopBuy_Button::cross_Image
+    IL_005a:  ldc.i4.0
+    IL_005b:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0060:  ret
+  } // end of method ShopBuy_Button::Start
+
+  .method public hidebysig instance void 
+          EnableShopBuyButton() cil managed
+  {
+    // Code size       97 (0x61)
+    .maxstack  2
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button ShopBuy_Button::shelfBuy_Button
+    IL_0006:  ldc.i4.1
+    IL_0007:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_000c:  ldarg.0
+    IL_000d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text ShopBuy_Button::shelfBuy_Text
+    IL_0012:  ldc.i4.1
+    IL_0013:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0018:  ldarg.0
+    IL_0019:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image ShopBuy_Button::shelfBuy_Image
+    IL_001e:  ldc.i4.1
+    IL_001f:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0024:  ldarg.0
+    IL_0025:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button ShopBuy_Button::fridgeBuy_Button
+    IL_002a:  ldc.i4.1
+    IL_002b:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0030:  ldarg.0
+    IL_0031:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text ShopBuy_Button::fridgeBuy_Text
+    IL_0036:  ldc.i4.1
+    IL_0037:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_003c:  ldarg.0
+    IL_003d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image ShopBuy_Button::fridgeBuy_Image
+    IL_0042:  ldc.i4.1
+    IL_0043:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0048:  ldarg.0
+    IL_0049:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button ShopBuy_Button::cross_Button
+    IL_004e:  ldc.i4.1
+    IL_004f:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0054:  ldarg.0
+    IL_0055:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image ShopBuy_Button::cross_Image
+    IL_005a:  ldc.i4.1
+    IL_005b:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0060:  ret
+  } // end of method ShopBuy_Button::EnableShopBuyButton
+
+  .method public hidebysig instance void 
+          ShelfBuyButtonClicked() cil managed
+  {
+    // Code size       12 (0xc)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class Hand_System ShopBuy_Button::hand_System
+    IL_0006:  callvirt   instance void Hand_System::Select_Shelf()
+    IL_000b:  ret
+  } // end of method ShopBuy_Button::ShelfBuyButtonClicked
+
+  .method public hidebysig instance void 
+          FridgeBuyButtonClicked() cil managed
+  {
+    // Code size       12 (0xc)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class Hand_System ShopBuy_Button::hand_System
+    IL_0006:  callvirt   instance void Hand_System::Select_Fridge()
+    IL_000b:  ret
+  } // end of method ShopBuy_Button::FridgeBuyButtonClicked
+
+  .method public hidebysig instance void 
+          CrossBuyButtonClicked() cil managed
+  {
+    // Code size       108 (0x6c)
+    .maxstack  2
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button ShopBuy_Button::shelfBuy_Button
+    IL_0006:  ldc.i4.0
+    IL_0007:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_000c:  ldarg.0
+    IL_000d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text ShopBuy_Button::shelfBuy_Text
+    IL_0012:  ldc.i4.0
+    IL_0013:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0018:  ldarg.0
+    IL_0019:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image ShopBuy_Button::shelfBuy_Image
+    IL_001e:  ldc.i4.0
+    IL_001f:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0024:  ldarg.0
+    IL_0025:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button ShopBuy_Button::fridgeBuy_Button
+    IL_002a:  ldc.i4.0
+    IL_002b:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0030:  ldarg.0
+    IL_0031:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text ShopBuy_Button::fridgeBuy_Text
+    IL_0036:  ldc.i4.0
+    IL_0037:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_003c:  ldarg.0
+    IL_003d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image ShopBuy_Button::fridgeBuy_Image
+    IL_0042:  ldc.i4.0
+    IL_0043:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0048:  ldarg.0
+    IL_0049:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button ShopBuy_Button::cross_Button
+    IL_004e:  ldc.i4.0
+    IL_004f:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0054:  ldarg.0
+    IL_0055:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image ShopBuy_Button::cross_Image
+    IL_005a:  ldc.i4.0
+    IL_005b:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0060:  ldarg.0
+    IL_0061:  ldfld      class Shop_Button ShopBuy_Button::shop_Button
+    IL_0066:  callvirt   instance void Shop_Button::EnableShopButton()
+    IL_006b:  ret
+  } // end of method ShopBuy_Button::CrossBuyButtonClicked
+
+} // end of class ShopBuy_Button
+
+.class public auto ansi beforefieldinit Shop_Button
+       extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .field public class [UnityEngine.UI]UnityEngine.UI.Button shopButton
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 16 53 68 6F 70 20 42 75 74 74 6F 6E 20 43   // ...Shop Button C
+                                                                                    6F 6D 70 6F 6E 65 6E 74 73 00 00 )                // omponents..
+  .field public class [UnityEngine.UI]UnityEngine.UI.Image shopImage
+  .field public class [UnityEngine.UI]UnityEngine.UI.Text shopText
+  .field public class [UnityEngine.UI]UnityEngine.UI.Button settingsButton
+  .custom instance void [UnityEngine]UnityEngine.HeaderAttribute::.ctor(string) = ( 01 00 1A 53 65 74 74 69 6E 67 73 20 42 75 74 74   // ...Settings Butt
+                                                                                    6F 6E 20 43 6F 6D 70 6F 6E 65 6E 74 73 00 00 )    // on Components..
+  .field public class [UnityEngine.UI]UnityEngine.UI.Image settingsImage
+  .field public class [UnityEngine.UI]UnityEngine.UI.Text settingsText
+  .field public class ShopBuy_Button shopBuy_Button
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor()
+    IL_0006:  ret
+  } // end of method Shop_Button::.ctor
+
+  .method public hidebysig instance void 
+          ShopButtonClicked() cil managed
+  {
+    // Code size       84 (0x54)
+    .maxstack  2
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button Shop_Button::shopButton
+    IL_0006:  ldc.i4.0
+    IL_0007:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_000c:  ldarg.0
+    IL_000d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image Shop_Button::shopImage
+    IL_0012:  ldc.i4.0
+    IL_0013:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0018:  ldarg.0
+    IL_0019:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text Shop_Button::shopText
+    IL_001e:  ldc.i4.0
+    IL_001f:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0024:  ldarg.0
+    IL_0025:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button Shop_Button::settingsButton
+    IL_002a:  ldc.i4.0
+    IL_002b:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0030:  ldarg.0
+    IL_0031:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image Shop_Button::settingsImage
+    IL_0036:  ldc.i4.0
+    IL_0037:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_003c:  ldarg.0
+    IL_003d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text Shop_Button::settingsText
+    IL_0042:  ldc.i4.0
+    IL_0043:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0048:  ldarg.0
+    IL_0049:  ldfld      class ShopBuy_Button Shop_Button::shopBuy_Button
+    IL_004e:  callvirt   instance void ShopBuy_Button::EnableShopBuyButton()
+    IL_0053:  ret
+  } // end of method Shop_Button::ShopButtonClicked
+
+  .method public hidebysig instance void 
+          EnableShopButton() cil managed
+  {
+    // Code size       73 (0x49)
+    .maxstack  2
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button Shop_Button::shopButton
+    IL_0006:  ldc.i4.1
+    IL_0007:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_000c:  ldarg.0
+    IL_000d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image Shop_Button::shopImage
+    IL_0012:  ldc.i4.1
+    IL_0013:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0018:  ldarg.0
+    IL_0019:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text Shop_Button::shopText
+    IL_001e:  ldc.i4.1
+    IL_001f:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0024:  ldarg.0
+    IL_0025:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Button Shop_Button::settingsButton
+    IL_002a:  ldc.i4.1
+    IL_002b:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0030:  ldarg.0
+    IL_0031:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Image Shop_Button::settingsImage
+    IL_0036:  ldc.i4.1
+    IL_0037:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_003c:  ldarg.0
+    IL_003d:  ldfld      class [UnityEngine.UI]UnityEngine.UI.Text Shop_Button::settingsText
+    IL_0042:  ldc.i4.1
+    IL_0043:  callvirt   instance void [UnityEngine]UnityEngine.Behaviour::set_enabled(bool)
+    IL_0048:  ret
+  } // end of method Shop_Button::EnableShopButton
+
+} // end of class Shop_Button
+
+.class public auto ansi beforefieldinit Tilt
+       extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor()
+    IL_0006:  ret
+  } // end of method Tilt::.ctor
+
+  .method private hidebysig instance void 
+          Start() cil managed
+  {
+    // Code size       12 (0xc)
+    .maxstack  8
+    IL_0000:  call       class [UnityEngine]UnityEngine.Gyroscope [UnityEngine]UnityEngine.Input::get_gyro()
+    IL_0005:  ldc.i4.1
+    IL_0006:  callvirt   instance void [UnityEngine]UnityEngine.Gyroscope::set_enabled(bool)
+    IL_000b:  ret
+  } // end of method Tilt::Start
+
+  .method private hidebysig instance void 
+          Update() cil managed
+  {
+    // Code size       54 (0x36)
+    .maxstack  2
+    .locals init (valuetype [UnityEngine]UnityEngine.Quaternion V_0)
+    IL_0000:  call       class [UnityEngine]UnityEngine.Gyroscope [UnityEngine]UnityEngine.Input::get_gyro()
+    IL_0005:  callvirt   instance valuetype [UnityEngine]UnityEngine.Quaternion [UnityEngine]UnityEngine.Gyroscope::get_attitude()
+    IL_000a:  stloc.0
+    IL_000b:  ldloca.s   V_0
+    IL_000d:  ldloca.s   V_0
+    IL_000f:  ldfld      float32 [UnityEngine]UnityEngine.Quaternion::y
+    IL_0014:  neg
+    IL_0015:  stfld      float32 [UnityEngine]UnityEngine.Quaternion::y
+    IL_001a:  ldloca.s   V_0
+    IL_001c:  ldloca.s   V_0
+    IL_001e:  ldfld      float32 [UnityEngine]UnityEngine.Quaternion::z
+    IL_0023:  neg
+    IL_0024:  stfld      float32 [UnityEngine]UnityEngine.Quaternion::z
+    IL_0029:  ldarg.0
+    IL_002a:  call       instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_002f:  ldloc.0
+    IL_0030:  callvirt   instance void [UnityEngine]UnityEngine.Transform::set_rotation(valuetype [UnityEngine]UnityEngine.Quaternion)
+    IL_0035:  ret
+  } // end of method Tilt::Update
+
+} // end of class Tilt
+
+.class public auto ansi beforefieldinit Tumble
+       extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor()
+    IL_0006:  ret
+  } // end of method Tumble::.ctor
+
+  .method private hidebysig instance void 
+          Update() cil managed
+  {
+    // Code size       27 (0x1b)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_0006:  ldc.r4     0.456
+    IL_000b:  ldc.r4     0.56699997
+    IL_0010:  ldc.r4     0.345
+    IL_0015:  callvirt   instance void [UnityEngine]UnityEngine.Transform::Rotate(float32,
+                                                                                  float32,
+                                                                                  float32)
+    IL_001a:  ret
+  } // end of method Tumble::Update
+
+} // end of class Tumble
+
+.class public auto ansi beforefieldinit Rotate
+       extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .field private float32 direction
+  .field private float32 elevation
+  .field private float32 distance
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor()
+    IL_0006:  ret
+  } // end of method Rotate::.ctor
+
+  .method private hidebysig instance void 
+          Start() cil managed
+  {
+    // Code size       76 (0x4c)
+    .maxstack  3
+    .locals init (valuetype [UnityEngine]UnityEngine.Vector3 V_0)
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_0006:  callvirt   instance valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Transform::get_position()
+    IL_000b:  stloc.0
+    IL_000c:  ldarg.0
+    IL_000d:  ldloca.s   V_0
+    IL_000f:  call       instance float32 [UnityEngine]UnityEngine.Vector3::get_magnitude()
+    IL_0014:  stfld      float32 Rotate::distance
+    IL_0019:  ldarg.0
+    IL_001a:  ldloca.s   V_0
+    IL_001c:  ldfld      float32 [UnityEngine]UnityEngine.Vector3::z
+    IL_0021:  ldloca.s   V_0
+    IL_0023:  ldfld      float32 [UnityEngine]UnityEngine.Vector3::x
+    IL_0028:  call       float32 [UnityEngine]UnityEngine.Mathf::Atan2(float32,
+                                                                       float32)
+    IL_002d:  stfld      float32 Rotate::direction
+    IL_0032:  ldarg.0
+    IL_0033:  ldloca.s   V_0
+    IL_0035:  ldfld      float32 [UnityEngine]UnityEngine.Vector3::y
+    IL_003a:  ldarg.0
+    IL_003b:  ldfld      float32 Rotate::distance
+    IL_0040:  div
+    IL_0041:  call       float32 [UnityEngine]UnityEngine.Mathf::Asin(float32)
+    IL_0046:  stfld      float32 Rotate::elevation
+    IL_004b:  ret
+  } // end of method Rotate::Start
+
+  .method private hidebysig instance void 
+          Update() cil managed
+  {
+    // Code size       114 (0x72)
+    .maxstack  5
+    .locals init (float32 V_0)
+    IL_0000:  ldarg.0
+    IL_0001:  dup
+    IL_0002:  ldfld      float32 Rotate::direction
+    IL_0007:  ldc.r4     9.9999998e-003
+    IL_000c:  add
+    IL_000d:  stfld      float32 Rotate::direction
+    IL_0012:  ldarg.0
+    IL_0013:  ldfld      float32 Rotate::distance
+    IL_0018:  ldarg.0
+    IL_0019:  ldfld      float32 Rotate::elevation
+    IL_001e:  call       float32 [UnityEngine]UnityEngine.Mathf::Cos(float32)
+    IL_0023:  mul
+    IL_0024:  stloc.0
+    IL_0025:  ldarg.0
+    IL_0026:  call       instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_002b:  ldloc.0
+    IL_002c:  ldarg.0
+    IL_002d:  ldfld      float32 Rotate::direction
+    IL_0032:  call       float32 [UnityEngine]UnityEngine.Mathf::Cos(float32)
+    IL_0037:  mul
+    IL_0038:  ldarg.0
+    IL_0039:  ldfld      float32 Rotate::distance
+    IL_003e:  ldarg.0
+    IL_003f:  ldfld      float32 Rotate::elevation
+    IL_0044:  call       float32 [UnityEngine]UnityEngine.Mathf::Sin(float32)
+    IL_0049:  mul
+    IL_004a:  ldloc.0
+    IL_004b:  ldarg.0
+    IL_004c:  ldfld      float32 Rotate::direction
+    IL_0051:  call       float32 [UnityEngine]UnityEngine.Mathf::Sin(float32)
+    IL_0056:  mul
+    IL_0057:  newobj     instance void [UnityEngine]UnityEngine.Vector3::.ctor(float32,
+                                                                               float32,
+                                                                               float32)
+    IL_005c:  callvirt   instance void [UnityEngine]UnityEngine.Transform::set_position(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_0061:  ldarg.0
+    IL_0062:  call       instance class [UnityEngine]UnityEngine.Transform [UnityEngine]UnityEngine.Component::get_transform()
+    IL_0067:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector3::get_zero()
+    IL_006c:  callvirt   instance void [UnityEngine]UnityEngine.Transform::LookAt(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_0071:  ret
+  } // end of method Rotate::Update
+
+} // end of class Rotate
+
+
+// =============================================================
+
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Temp\StagingArea/Managed\Assembly-CSharp.res

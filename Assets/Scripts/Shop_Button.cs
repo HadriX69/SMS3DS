@@ -28,6 +28,7 @@ public class Shop_Button : MonoBehaviour
         settingsText.enabled = false;
         shopBuy_Button.EnableShopBuyButton();
     }
+
     public void EnableShopButton()
     {
         // Show shop button

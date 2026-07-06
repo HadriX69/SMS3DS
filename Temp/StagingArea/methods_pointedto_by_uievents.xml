@@ -1,0 +1,15 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="ShopBuy_Button">
+			<method name="CrossBuyButtonClicked"/>
+			<method name="ShelfBuyButtonClicked"/>
+			<method name="FridgeBuyButtonClicked"/>
+		</type>
+		<type fullname="Shop_Button">
+			<method name="ShopButtonClicked"/>
+		</type>
+		<type fullname="Settings_Button">
+			<method name="SettingsButtonClicked"/>
+		</type>
+	</assembly>
+</linker>

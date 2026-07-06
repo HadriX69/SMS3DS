@@ -1,10 +1,18 @@
 fileFormatVersion: 2
 guid: 084f250687af3cb469ef1b7805e465be
-timeCreated: 1766223196
+timeCreated: 1771163341
 licenseType: Pro
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Hand_Transform: {instanceID: 0}
+  - Shelf: {fileID: 100000, guid: b5675d79e3d01c745ac67c099e617d1d, type: 3}
+  - Fridge: {fileID: 100000, guid: d45818ea8817d724aa7606d648f9268e, type: 3}
+  - Build_Tex: {fileID: 2100000, guid: 9be7eab506d3c1b4e87c9ebefcbf0e23, type: 2}
+  - Shelf_Tex: {fileID: 2100000, guid: 82f6d6f16d7f20149aeba3235308107e, type: 2}
+  - Fridge_Tex: {fileID: 2100000, guid: 612ff7dbb7ec9ea4b9a7dbe78a3fb952, type: 2}
+  - Shelf_T: {instanceID: 0}
+  - Fridge_T: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -11,7 +11,12 @@ public class ShopBuy_Button : MonoBehaviour {
 	[Header("Shelf Buy Button Components")]
     public Button shelfBuy_Button;
 	public Text shelfBuy_Text;
-	[Header("Cross Button Components")]
+    public Image shelfBuy_Image;
+    [Header("Fridge Buy Button Components")]
+    public Button fridgeBuy_Button;
+    public Text fridgeBuy_Text;
+    public Image fridgeBuy_Image;
+    [Header("Cross Button Components")]
 	public Button cross_Button;
 	public Image cross_Image;
 
@@ -20,6 +25,11 @@ public class ShopBuy_Button : MonoBehaviour {
         // Disable the shelf buy button and text at the start
         shelfBuy_Button.enabled = false;
 		shelfBuy_Text.enabled = false;
+        shelfBuy_Image.enabled = false;
+        // Disable the fridge buy button and text at the start
+        fridgeBuy_Button.enabled = false;
+        fridgeBuy_Text.enabled = false;
+        fridgeBuy_Image.enabled = false;
         // Disable the cross button and image at the start
         cross_Button.enabled = false;
 		cross_Image.enabled = false;
@@ -27,9 +37,16 @@ public class ShopBuy_Button : MonoBehaviour {
 
 	public void EnableShopBuyButton() 
 	{
+        // Enable the shelf buy button and text
         shelfBuy_Button.enabled = true;
         shelfBuy_Text.enabled = true;
-		cross_Button.enabled = true;
+        shelfBuy_Image.enabled = true;
+        // Enable the fridge buy button and text
+        fridgeBuy_Button.enabled = true;
+        fridgeBuy_Text.enabled = true;
+        fridgeBuy_Image.enabled = true;
+        // Enable Cross Button and Image
+        cross_Button.enabled = true;
 		cross_Image.enabled = true;
     }
 
@@ -38,11 +55,22 @@ public class ShopBuy_Button : MonoBehaviour {
 		hand_System.Select_Shelf();
     }
 
-	public void CrossBuyButtonClicked() 
+    public void FridgeBuyButtonClicked() 
+    {
+        hand_System.Select_Fridge();
+    }
+
+
+    public void CrossBuyButtonClicked() 
 	{
         // Disable the shelf buy button and text
         shelfBuy_Button.enabled = false;
         shelfBuy_Text.enabled = false;
+        shelfBuy_Image.enabled = false;
+        // Disable the fridge buy button and text at the start
+        fridgeBuy_Button.enabled = false;
+        fridgeBuy_Text.enabled = false;
+        fridgeBuy_Image.enabled = false;
         // Disable the cross button and image
         cross_Button.enabled = false;
         cross_Image.enabled = false;
